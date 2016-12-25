@@ -87,8 +87,7 @@ function autojoin() {
         $('.omega-theme-toggle-autojoin').children('.omega-menu-icon').show();
         omegaTheme.autojoin = true;
         console.info('[Omega] Enabled AutoJoin.');
-		function join() {
-    var e = API.getWaitList().length;
+		var e = API.getWaitList().length;
     var t = API.getTimeRemaining();
     var n = API.getWaitListPosition(user);
     if (n > -1 || API.getBoothPosition(user) > -1) {
@@ -135,16 +134,17 @@ function autojoin() {
             failed()
         }
     }, t * 1e3 - 1500)
+    }
 }
 function failed() {
     setTimeout(function() {
-        join()
+        autojoin()
     }, 5e3)
 }
 function CommandCalled(e) {
     if (e == "/joinqueue") {
         API.chatLog("You will now be added to the queue automaticly whenever you are not in it", false);
-        join()
+        autojoin()
     }
     if (e == "/canceljoin") {
         API.chatLog("You will no longer be automaticly added to the queue by this bot", false);
@@ -191,13 +191,11 @@ function djChange() {
     var t = API.getWaitListPosition(user);
     if (e == -1 && t == -1) {
         setTimeout(function() {
-            console.log("detected not in queue, will now run join()");
-            join()
+            console.log("detected not in queue, will now run autojoin()");
+            autojoin()
         }, 5e3)
     }
 }
 var add1, add2, add3, add4;
 var user = API.getUser().id;
 API.on(API.CHAT_COMMAND, CommandCalled)
-    }
-}
