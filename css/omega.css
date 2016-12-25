@@ -19,6 +19,9 @@ div.panel {
 div.panel.show {   
   display: block;
 }
+.omega-menu-header.list-header{
+	text-align: center;
+}
 .disabled {
     background-color: red !important;
 }
