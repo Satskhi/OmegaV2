@@ -214,14 +214,15 @@ function autowoot() {
         $('.omega-theme-toggle-autowoot').children('.omega-menu-icon').hide();
         omegaTheme.autowoot = false;
         console.info('[Omega] Disabled autowoot.');
-		API.off(API.DJ_ADVANCE, callback);
+		API.off(API.ADVANCE, callback);
     } else {
         $('.omega-theme-toggle-autowoot').children('.omega-menu-icon').show();
         omegaTheme.autowoot = true;
         console.info('[Omega] Enabled autowoot.');
-		API.on(API.DJ_ADVANCE, callback(obj)); 
+		API.on(API.ADVANCE, callback(obj){ 
 			setTimeout(function(){
 				$('#woot').click();
 			}, 1000);
+		});	
     }
 }
