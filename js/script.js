@@ -91,13 +91,6 @@ function autojoin() {
     waitingCount = API.getWaitList().length;
     if (waitingCount < 50) {
         API.djJoin()
-    }
-    setTimeout(function() {
-        if (API.getWaitListPosition(user) > -1) {
-            cancel();
-            API.chatLog("Join method 1 successful", false);
-            detect()
-        }
     }, 5e3)
     }
 }
