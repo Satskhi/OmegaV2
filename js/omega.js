@@ -20,7 +20,7 @@ var Omega = (function () {
                     <span class="icon-info omega-menu-button-info"><i class="icon" style="width: 26px;height: 27px;background: url(https://i.imgur.com/TqvnXhO.png);"></i></span>
                 </div>`,
         menu: `<div id="omega-menu" style="display:none">
-                <div class="omega-menu-header list-header"><span class="title">omega Settings</span></div>
+                <div class="omega-menu-header list-header"><span class="title">Omega Settings</span></div>
                 <div class="list staff jspScrollable" style="top: 40px !important; overflow: hidden; padding: 0px; outline: none; width: 345px; height: ${$(document).height() - 148}px" tabindex="0">
                     <div class="jspContainer" style="overflow: scroll; width: 340px; top:5px; height:${$(document).height() - 153}px">
                         <div class="jspPane" style="padding: 0px; top: 0px; left: 0px; width: 331px;">
