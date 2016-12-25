@@ -214,6 +214,12 @@ function autowoot() {
         $('.omega-theme-toggle-autowoot').children('.omega-menu-icon').hide();
         omegaTheme.autowoot = false;
         console.info('[Omega] Disabled autowoot.');
+		document.getElementById("woot").click();
+			API.off(API.ADVANCE, function(){
+				setTimeout(function(){ 
+					document.getElementById("woot").click();
+				}, 5000);
+			});
     } else {
         $('.omega-theme-toggle-autowoot').children('.omega-menu-icon').show();
         omegaTheme.autowoot = true;
@@ -224,7 +230,5 @@ function autowoot() {
 					document.getElementById("woot").click();
 				}, 5000);
 			});
-    }
-}
     }
 }
