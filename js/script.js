@@ -208,3 +208,15 @@ function autojoin() {
     API.on(API.CHAT_COMMAND)
 }
 //Ty _ĐⱧ111_ <3
+
+function autowoot() {
+    if (omegaTheme.autowoot === true) {
+        $('.omega-theme-toggle-autowoot').children('.omega-menu-icon').hide();
+        omegaTheme.autowoot = false;
+        console.info('[Omega] Disabled autowoot.');
+    } else {
+        $('.omega-theme-toggle-autowoot').children('.omega-menu-icon').show();
+        omegaTheme.autowoot = true;
+        console.info('[Omega] Enabled autowoot.');
+    }
+}
