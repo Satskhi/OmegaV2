@@ -42,7 +42,10 @@ var Omega = (function () {
 							
 							<button class="accordion">Badge</button>
 							<div class="panel">
-							<p>Coming soon...</p>
+							<div class="user omega-theme-toggle-special omega-menu-item" onclick="badgespecial()">
+									<i class="icon icon-check-blue omega-menu-icon"></i>
+									<span class="name omega-menu-span">Special</span>
+								</div>
 							</div>
 							<!-- -->
                         </div>
