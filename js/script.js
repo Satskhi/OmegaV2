@@ -219,7 +219,6 @@ function autowoot() {
     } else {
         $('.omega-theme-toggle-autowoot').children('.omega-menu-icon').show();
         omegaTheme.autowoot = true;
-		stopWooting();
 		API.on(API.DJ_ADVANCE, callback);
 		wootSong();
         console.info('[Omega] Enabled autowoot.');	
