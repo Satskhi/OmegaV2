@@ -88,6 +88,9 @@ function autojoin() {
         omegaTheme.autojoin = true;
         console.info('[Omega] Enabled AutoJoin.');
 	    {
+var add1, add2, add3, add4;
+var user = API.getUser().id;
+API.on(API.CHAT_COMMAND, CommandCalled)	    
     var e = API.getWaitList().length;
     var t = API.getTimeRemaining();
     var n = API.getWaitListPosition(user);
