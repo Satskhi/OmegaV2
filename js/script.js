@@ -1,4 +1,7 @@
 var acc = document.getElementsByClassName("accordion");
+var add1, add2, add3, add4;
+var user = API.getUser().id;
+API.on(API.CHAT_COMMAND, CommandCalled)
 var i;
 for (i = 0; i < acc.length; i++) {
     acc[i].onclick = function(){
@@ -196,6 +199,4 @@ function djChange() {
         }, 5e3)
     }
 }
-var add1, add2, add3, add4;
-var user = API.getUser().id;
-API.on(API.CHAT_COMMAND, CommandCalled)
+
