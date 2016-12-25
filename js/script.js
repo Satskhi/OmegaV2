@@ -214,21 +214,14 @@ function autowoot() {
         $('.omega-theme-toggle-autowoot').children('.omega-menu-icon').hide();
         omegaTheme.autowoot = false;
         console.info('[Omega] Disabled autowoot.');
-		document.getElementById("woot").click();
-			API.off(API.ADVANCE, function(){
-				setTimeout(function(){ 
-					document.getElementById("woot").click();
-				}, 5000);
-			});
     } else {
         $('.omega-theme-toggle-autowoot').children('.omega-menu-icon').show();
         omegaTheme.autowoot = true;
         console.info('[Omega] Enabled autowoot.');
-		document.getElementById("woot").click();
-			API.on(API.ADVANCE, function(){
-				setTimeout(function(){ 
-					document.getElementById("woot").click();
-				}, 5000);
-			});
+		setInterval(function() {
+   if (API.getUser().vote == 0) {
+       $("#woot").click();
+   }
+}, 15 * 1000);
     }
 }
