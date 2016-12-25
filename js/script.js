@@ -90,7 +90,7 @@ function autojoin() {
 		setTimeout(function(){
 			if (waitingCount < 50) {
 				API.djJoin()
-			}, 1000);
+			}, 5e3);
 		
     }	
 }
