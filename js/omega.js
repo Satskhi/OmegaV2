@@ -1,101 +1,210 @@
-// Omega Styles
-var omegaTheme = $.extend({
-   	rory: false,
-    edt: false,
-	special: false,
-	autojoin: false,
-});
-var CssOmega = document.getElementById('rcs-appright-button');
-if (CssOmega === null) {
-    var CssOmega = $('head').append('<link href="https://rawgit.com/Satskhi/ScriptTest/master/omegatest/menuwithoutrcs.css" rel="stylesheet" type="text/css">');
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function() {
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+    }
+}
+var ThemeOmega = document.getElementById('omega-css');
+if (ThemeOmega === null) {
+    var ThemeOmega = document.createElement('link');
+    ThemeOmega.setAttribute('id', 'Omega-Theme');
+    ThemeOmega.setAttribute('rel', 'stylesheet');
+    ThemeOmega.setAttribute('type', 'text/css');
+    document.head.appendChild(ThemeOmega);
 } else {
-        var CssOmega = $('head').append('<link href="https://rawgit.com/Satskhi/ScriptTest/master/omegatest/menuwithrcs.css" rel="stylesheet" type="text/css">');
+    ThemeOmega.remove();
 };
-$('head').append('<link href="https://rawgit.com/Satskhi/OmegaV2/master/css/omega.css" rel="stylesheet" type="text/css">');
-$('head').append('<script type="text/javascript" src="https://rawgit.com/Satskhi/OmegaV2/master/js/script.js"></script>');
+var BadgeOmega = document.getElementById('omega-css');
+if (BadgeOmega === null) {
+    var BadgeOmega = document.createElement('link');
+    BadgeOmega.setAttribute('id', 'Omega-Badge');
+    BadgeOmega.setAttribute('rel', 'stylesheet');
+    BadgeOmega.setAttribute('type', 'text/css');
+    document.head.appendChild(BadgeOmega);
+} else {
+    BadgeOmega.remove();
+};
 
-// MENU
-var Omega = (function () {
-    var models = {
-        'tab': `<div id="omega-menu-button" class="header-panel-button omega-tab">
-                    <span class="icon-info omega-menu-button-info"><i class="icon" style="width: 26px;height: 27px;background: url(https://i.imgur.com/TqvnXhO.png);"></i></span>
-                </div>`,
-        menu: `<div id="omega-menu" style="display:none">
-                <div class="omega-menu-header list-header"><span class="title">Omega Settings</span></div>
-                <div class="list staff jspScrollable" style="top: 40px !important; overflow: hidden; padding: 0px; outline: none; width: 345px; height: ${$(document).height() - 148}px" tabindex="0">
-                    <div class="jspContainer" style="overflow: scroll; width: 340px; top:5px; height:${$(document).height() - 153}px">
-                        <div class="jspPane" style="padding: 0px; top: 0px; left: 0px; width: 331px;">
-							<!-- -->
-							<button class="accordion">Auto-Woot</button>
-							<div class="panel">
-							<p>Coming soon...</p>
-							<div class="user omega-theme-toggle-autojoin omega-menu-item" onclick="autojoin()">
-									<i class="icon icon-check-blue omega-menu-icon"></i>
-									<span class="name omega-menu-span">AutoJoin</span>
-								</div>
-							</div>
-							<button class="accordion">Theme</button>
-							<div class="panel">
-								<div class="user omega-theme-toggle-rory omega-menu-item" onclick="Themerory()">
-									<i class="icon icon-check-blue omega-menu-icon"></i>
-									<span class="name omega-menu-span">Rory</span>
-								</div>
-								<div class="user omega-theme-toggle-edt omega-menu-item" onclick="Themeedt()">
-									<i class="icon icon-check-blue omega-menu-icon"></i>
-									<span class="name omega-menu-span">Edt</span>
-								</div>
-							</div>
-							
-							<button class="accordion">Badge</button>
-							<div class="panel">
-							<div class="user omega-theme-toggle-special omega-menu-item" onclick="badgespecial()">
-									<i class="icon icon-check-blue omega-menu-icon"></i>
-									<span class="name omega-menu-span">Special</span>
-								</div>
-							</div>
-							<!-- -->
-                        </div>
-                    </div>
-                </div>
-            </div>`
-    };
-	
-    $('#header-panel-bar').append(models.tab);
-    $('#header-panel-bar').click(function () {
-        setTimeout(function () {
-            if (!$('#omega-menu-button').hasClass('selected')) {
-                $('#omega-menu').hide();
+function badge(b) {
+    if (b == 1) {
+        document.getElementById('Omega-Badge').setAttribute('href', 'https://rawgit.com/Satskhi/PlugCssSatskhi/master/css/user.css');
+    } else {
+        document.getElementById('Omega-Badge').removeAttribute('href');
+    }
+};
+
+function Themerory() {
+    if (omegaTheme.rory === true) {
+        $('.omega-theme-toggle-rory').children('.omega-menu-icon').hide();
+        omegaTheme.rory = false;
+        document.getElementById('Omega-Theme').removeAttribute('href');
+        console.info('[Omega] Disabled Rory Theme.');
+    } else {
+        $('.omega-theme-toggle-rory').children('.omega-menu-icon').show();
+        $('.omega-theme-toggle-edt').children('.omega-menu-icon').hide();
+        omegaTheme.edt = false;
+        omegaTheme.rory = true;
+        document.getElementById('Omega-Theme').setAttribute('href', 'https://rawgit.com/SatskhiPlug/SatskhiPlug/master/css.css');
+        console.info('[Omega] Enabled Rory Theme.');
+    }
+}
+
+function Themeedt() {
+    if (omegaTheme.edt === true) {
+        $('.omega-theme-toggle-edt').children('.omega-menu-icon').hide();
+        omegaTheme.edt = false;
+        document.getElementById('Omega-Theme').removeAttribute('href');
+        console.info('[Omega] Disabled Edt Theme.');
+    } else {
+        $('.omega-theme-toggle-edt').children('.omega-menu-icon').show();
+        $('.omega-theme-toggle-rory').children('.omega-menu-icon').hide();
+        omegaTheme.rory = false;
+        omegaTheme.edt = true;
+        document.getElementById('Omega-Theme').setAttribute('href', 'https://rawgit.com/TheStrangerGuy/EDT/master/EDT.css');
+        console.info('[Omega] Enabled Edt Theme.');
+    }
+}
+
+function badgespecial() {
+    if (omegaTheme.special === true) {
+        $('.omega-theme-toggle-special').children('.omega-menu-icon').hide();
+        omegaTheme.special = false;
+        document.getElementById('Omega-Badge').removeAttribute('href');
+        console.info('[Omega] Disabled Badge Special.');
+    } else {
+        $('.omega-theme-toggle-special').children('.omega-menu-icon').show();
+        omegaTheme.special = true;
+        document.getElementById('Omega-Badge').setAttribute('href', 'https://rawgit.com/Satskhi/PlugCssSatskhi/master/css/user.css');
+        console.info('[Omega] Enabled Badge Special.');
+    }
+}
+//Ty _ĐⱧ111_ <3
+function autojoin() {
+    if (omegaTheme.autojoin === true) {
+        $('.omega-theme-toggle-autojoin').children('.omega-menu-icon').hide();
+        omegaTheme.autojoin = false;
+        console.info('[Omega] Disabled AutoJoin.');
+    } else {
+        $('.omega-theme-toggle-autojoin').children('.omega-menu-icon').show();
+        omegaTheme.autojoin = true;
+        console.info('[Omega] Enabled AutoJoin.');
+        var e = API.getWaitList().length;
+        var t = API.getTimeRemaining();
+        var n = API.getWaitListPosition(user);
+        if (n > -1 || API.getWaitLitPosition(user) > -1) {
+            API.chatLog("You are currently in the queue, the bot will add you back into the queue if you leave it", false);
+            cancelDetect();
+            return
+        }
+        if (e < 50) {
+            API.djJoin();
+            add1 = setTimeout(function() {
+                if (API.getWaitListPosition(user) > -1) {
+                    API.chatLog("Queue had a space free, you were added", false);
+                    cancelDetect();
+                    return
+                }
+            }, 1e3)
+        }
+        API.on(API.WAIT_LIST_UPDATE, singleShotJoin);
+        console.log("join in progress1");
+        add2 = setTimeout(function() {
+            if (API.getTimeRemaining() < 3) {
+                console.log("join in progress2");
+                add3 = setInterval(function() {
+                    console.log("join in progress3");
+                    API.djJoin();
+                    t = API.getTimeRemaining();
+                    n = API.getWaitListPosition(user);
+                    if (n > -1 || t > 3) {
+                        add4 = setTimeout(function() {
+                            if (n > -1) {
+                                API.chatLog("Join method 2 successful", false);
+                                cancelDetect();
+                                return
+                            } else if (t > 3) {
+                                console.log("Join method 2 failed, attempting again");
+                                cancelFailed();
+                                return
+                            }
+                        }, 1e3)
+                    }
+                }, 40)
+            } else {
+                console.log("song was skipped, trying again");
+                failed();
             }
-        })
-    });
-    $('#omega-menu-button').click(function () {
-        if (!$('#omega-menu-button').hasClass('selected')) {
-            $(".header-panel-button").removeClass('selected')
-            $('#omega-menu-button').addClass('selected');
-            $('.app-right').children().hide();
-            $('#omega-menu').show();
-        }
-    });
+        }, t * 1e3 - 1500)
+    }
 
-    $('.app-right').append(models.menu);
+    function failed() {
+        setTimeout(function() {
+            autojoin();
+        }, 5e3)
+    }
+    function cancelDetect() {
+        API.off(API.WAIT_LIST_UPDATE, singleShotJoin);
+        API.off(API.ADVANCE, djChange);
+        clearInterval(add1);
+        clearInterval(add2);
+        clearInterval(add3);
+        clearInterval(add4);
+        detect();
+    }
 
-    API.on(API.CHAT, function (msg) {
-        // Omega Developer
-        if ([4405644, 4453527].indexOf(msg.uid) !== -1) {
-            $($($('div[data-cid^="' + msg.cid + '"]').addClass('omega-developer')).children('.msg')).children('.from').prepend('<i title="Omega Developer" class="icon"style="width:16px;height:16px;background: url(\'https://i.imgur.com/aJrMhVY.png\')">')
+    function cancelFailed() {
+        API.off(API.WAIT_LIST_UPDATE, singleShotJoin);
+        API.off(API.ADVANCE, djChange);
+        clearInterval(add1);
+        clearInterval(add2);
+        clearInterval(add3);
+        clearInterval(add4);
+        failed();
+    }
+
+    function detect() {
+        API.on(API.ADVANCE, djChange)
+    }
+    
+    function cancel() {
+        API.off(API.WAIT_LIST_UPDATE, singleShotJoin);
+        API.off(API.ADVANCE, djChange);
+        clearInterval(add1);
+        clearInterval(add2);
+        clearInterval(add3);
+        clearInterval(add4);
+        failed();      
+    }
+
+    function singleShotJoin() {
+        console.log("singleshot running");
+        waitingCount = API.getWaitList().length;
+        if (waitingCount < 50) {
+            API.djJoin()
         }
-        // Omega Beta
-        if ([4453527, 3469419].indexOf(msg.uid) !== -1) {
-            $($($('div[data-cid^="' + msg.cid + '"]').addClass('omega-vip')).children('.msg')).children('.from').prepend('<i title="Omega Beta" class="icon"style="width:16px;height:16px;background: url(\'https://i.imgur.com/3yKZCT2.png\')">')
+        setTimeout(function() {
+            if (API.getWaitListPosition(user) > -1) {
+                cancel();
+                API.chatLog("Join method 1 successful", false);
+                detect();
+            }
+        }, 5e3)
+    }
+
+    function djChange() {
+        var t = API.getWaitListPosition(user);
+        if (t == -1) {
+            setTimeout(function() {
+                console.log("detected not in queue, will now run autojoin()");
+                autojoin();
+            }, 5e3)
         }
-        // Omega Vip
-        if ([4453527, 6081851].indexOf(msg.uid) !== -1) {
-            $($($('div[data-cid^="' + msg.cid + '"]').addClass('omega-vip')).children('.msg')).children('.from').prepend('<i title="Omega Vip" class="icon"style="width:16px;height:16px;background: url(\'https://i.imgur.com/i08kSvq.png\')">')
-        }
-        // Supporter
-        if ([4453527, 5280078].indexOf(msg.uid) !== -1) {
-            $($($('div[data-cid^="' + msg.cid + '"]').addClass('omega-vip')).children('.msg')).children('.from').prepend('<i title="Supporter" class="icon"style="width:16px;height:16px;background: url(\'https://i.imgur.com/f1GSYq9.png\')">')
-        }
-    });
-	
-})();
+    }
+
+    var add1, add2, add3, add4;
+    var user = API.getUser().id;
+    API.on(API.CHAT_COMMAND, CommandCalled)
+}
+//Ty _ĐⱧ111_ <3
