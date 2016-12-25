@@ -208,28 +208,27 @@ function autojoin() {
     API.on(API.CHAT_COMMAND)
 }
 //Ty _ĐⱧ111_ <3
-
+var wooting = true;
+function wootSong() {
+	if(wooting) {
+		$('#woot').click();
+	}
+}
+function callback(obj) {
+	wootSong();
+}
 function autowoot() {
     if (omegaTheme.autowoot === true) {
         $('.omega-theme-toggle-autowoot').children('.omega-menu-icon').hide();
         omegaTheme.autowoot = false;
-		API.off(API.DJ_ADVANCE, callback);
+		API.off(APIADVANCE, callback);
 		wootSong();
 		console.info('[Omega] Disabled autowoot.');
     } else {
         $('.omega-theme-toggle-autowoot').children('.omega-menu-icon').show();
         omegaTheme.autowoot = true;
-		API.on(API.DJ_ADVANCE, callback);
+		API.on(API.ADVANCE, callback);
 		wootSong();
-        console.info('[Omega] Enabled autowoot.');	
-		function callback(obj) {
-			wootSong();
-		}
-		function wootSong() {
-			if(wooting) {
-				$('#woot').click();
-			}
-		}
-		var wooting = true;	
+        console.info('[Omega] Enabled autowoot.');		
     }
 }
