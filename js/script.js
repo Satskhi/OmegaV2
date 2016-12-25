@@ -221,8 +221,10 @@ function autowoot() {
         console.info('[Omega] Enabled autowoot.');
 		API.on(API.DJ_ADVANCE, callback);
 		setTimeout(function(){
-		$('#woot').click();
-		function callback(obj) { $('#woot').click(); }
+			$('#woot').click();
 		}, 1000);
+		function callback(obj) { 
+			$('#woot').click(); }
+		
     }
 }
