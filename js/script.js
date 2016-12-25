@@ -218,5 +218,11 @@ function autowoot() {
         $('.omega-theme-toggle-autowoot').children('.omega-menu-icon').show();
         omegaTheme.autowoot = true;
         console.info('[Omega] Enabled autowoot.');
+		document.getElementById("woot").click();
+			API.on(API.ADVANCE, function(){
+				setTimeout(function(){ 
+					document.getElementById("woot").click();
+				}, 5000);
+			});
     }
 }
