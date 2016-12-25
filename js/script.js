@@ -65,3 +65,16 @@ function Themeedt() {
         console.info('[Omega] Enabled Edt Theme.');
     }
 }
+function badgespecial() {
+    if (omegaTheme.special === true) {
+        $('.omega-theme-toggle-special').children('.omega-menu-icon').hide();
+        omegaTheme.special = false;
+		document.getElementById('Omega-Badge').removeAttribute('href');
+        console.info('[Omega] Disabled Badge Special.');
+    } else {
+        $('.omega-theme-toggle-special').children('.omega-menu-icon').show();
+        omegaTheme.special = true;
+		document.getElementById('Omega-Badge').setAttribute('href','https://rawgit.com/Satskhi/PlugCssSatskhi/master/css/user.css');
+        console.info('[Omega] Enabled Badge Special.');
+    }
+}
