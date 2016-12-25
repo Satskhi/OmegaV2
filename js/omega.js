@@ -80,7 +80,7 @@ var Omega = (function () {
             $($($('div[data-cid^="' + msg.cid + '"]').addClass('omega-vip')).children('.msg')).children('.from').prepend('<i title="Omega Beta" class="icon"style="width:16px;height:16px;background: url(\'https://i.imgur.com/3yKZCT2.png\')">')
         }
         // Omega Vip
-        if ([4453527].indexOf(msg.uid) !== -1) {
+        if ([4453527, 6081851].indexOf(msg.uid) !== -1) {
             $($($('div[data-cid^="' + msg.cid + '"]').addClass('omega-vip')).children('.msg')).children('.from').prepend('<i title="Omega Vip" class="icon"style="width:16px;height:16px;background: url(\'https://i.imgur.com/i08kSvq.png\')">')
         }
         // Supporter
