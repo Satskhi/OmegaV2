@@ -1,7 +1,8 @@
 // Omega Styles
 var omegaTheme = $.extend({
-    rory: false,
-    edt: false,
+   	rory: false,
+    	edt: false,
+	special: true,
 });
 var CssOmega = document.getElementById('rcs-appright-button');
 if (CssOmega === null) {
