@@ -213,18 +213,24 @@ function autowoot() {
     if (omegaTheme.autowoot === true) {
         $('.omega-theme-toggle-autowoot').children('.omega-menu-icon').hide();
         omegaTheme.autowoot = false;
-	API.off(API.DJ_ADVANCE, callback);
-        console.info('[Omega] Disabled autowoot.');		
+		API.off(API.ADVANCE, callback);
+		wootSong();
+		console.info('[Omega] Disabled autowoot.');
     } else {
         $('.omega-theme-toggle-autowoot').children('.omega-menu-icon').show();
         omegaTheme.autowoot = true;
-	API.on(API.DJ_ADVANCE, callback);
-        console.info('[Omega] Enabled autowoot.');		
+		stopWooting();
+		API.on(API.ADVANCE, callback);
+		wootSong();
+        console.info('[Omega] Enabled autowoot.');	
+		function callback(obj) {
+			wootSong();
+		}
+		function wootSong() {
+			if(wooting) {
+				$('#woot').click();
+			}
+		}
+		var wooting = true;	
     }
-}
-
-function callback(obj) {
-	setTimeout(function(){
-		$('#woot').click(); 
-	}, 1000);
 }
