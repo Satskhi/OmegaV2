@@ -91,6 +91,6 @@ function autojoin() {
     waitingCount = API.getWaitList().length;
     if (waitingCount < 50) {
         API.djJoin()
-    }, 5e3)
+    }, 1000)
     }
 }
