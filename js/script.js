@@ -94,10 +94,9 @@ function autojoin() {
     			}
 	    		setTimeout(function() {
 				if (API.getWaitListPosition(user) > -1) {
-		    		cancel();
 		    		API.chatLog("Join method 1 successful", false);
 		    		detect()
 				}
-	    		}, 5e3)
+	    		}, 1000)
     }
 }
