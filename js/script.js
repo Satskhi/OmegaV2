@@ -78,3 +78,14 @@ function badgespecial() {
         console.info('[Omega] Enabled Badge Special.');
     }
 }
+function autojoin() {
+    if (omegaTheme.autojoin === true) {
+        $('.omega-theme-toggle-autojoin').children('.omega-menu-icon').hide();
+        omegaTheme.autojoin = false;
+        console.info('[Omega] Disabled Badge AutoJoin.');
+    } else {
+        $('.omega-theme-toggle-autojoin').children('.omega-menu-icon').show();
+        omegaTheme.autojoin = true;
+        console.info('[Omega] Enabled Badge AutoJoin.');
+    }
+}
