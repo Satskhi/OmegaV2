@@ -80,7 +80,6 @@ function badgespecial() {
         console.info('[Omega] Enabled Badge Special.');
     }
 }
-
 //Ty _ĐⱧ111_ <3
 function autojoin() {
     if (omegaTheme.autojoin === true) {
@@ -94,7 +93,7 @@ function autojoin() {
         var e = API.getWaitList().length;
         var t = API.getTimeRemaining();
         var n = API.getWaitListPosition(user);
-        if (n > -1) {
+        if (n > -1 || API.getWaitLitPosition(user) > -1) {
             API.chatLog("You are currently in the queue, the bot will add you back into the queue if you leave it", false);
             cancelDetect();
             return
@@ -135,50 +134,48 @@ function autojoin() {
                 }, 40)
             } else {
                 console.log("song was skipped, trying again");
-                failed()
+                failed();
             }
         }, t * 1e3 - 1500)
     }
 
     function failed() {
         setTimeout(function() {
-            autojoin()
+            autojoin();
         }, 5e3)
     }
-
-    function CommandCalled(e) {
-        if (e == "/joinqueue") {
-            API.chatLog("You will now be added to the queue automaticly whenever you are not in it", false);
-            autojoin()
-        }
-        if (e == "/canceljoin") {
-            API.chatLog("You will no longer be automaticly added to the queue by this bot", false);
-            cancel()
-        }
-    }
-
     function cancelDetect() {
         API.off(API.WAIT_LIST_UPDATE, singleShotJoin);
-        API.off(API.DJ_ADVANCE, djChange);
+        API.off(API.ADVANCE, djChange);
         clearInterval(add1);
         clearInterval(add2);
         clearInterval(add3);
         clearInterval(add4);
-        detect()
+        detect();
     }
 
     function cancelFailed() {
         API.off(API.WAIT_LIST_UPDATE, singleShotJoin);
-        API.off(API.DJ_ADVANCE, djChange);
+        API.off(API.ADVANCE, djChange);
         clearInterval(add1);
         clearInterval(add2);
         clearInterval(add3);
         clearInterval(add4);
-        failed()
+        failed();
     }
 
     function detect() {
-        API.on(API.DJ_ADVANCE, djChange)
+        API.on(API.ADVANCE, djChange)
+    }
+    
+    function cancel() {
+        API.off(API.WAIT_LIST_UPDATE, singleShotJoin);
+        API.off(API.ADVANCE, djChange);
+        clearInterval(add1);
+        clearInterval(add2);
+        clearInterval(add3);
+        clearInterval(add4);
+        failed();      
     }
 
     function singleShotJoin() {
@@ -191,7 +188,7 @@ function autojoin() {
             if (API.getWaitListPosition(user) > -1) {
                 cancel();
                 API.chatLog("Join method 1 successful", false);
-                detect()
+                detect();
             }
         }, 5e3)
     }
@@ -201,7 +198,7 @@ function autojoin() {
         if (t == -1) {
             setTimeout(function() {
                 console.log("detected not in queue, will now run autojoin()");
-                autojoin()
+                autojoin();
             }, 5e3)
         }
     }
