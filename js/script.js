@@ -87,57 +87,17 @@ function autojoin() {
         $('.omega-theme-toggle-autojoin').children('.omega-menu-icon').show();
         omegaTheme.autojoin = true;
         console.info('[Omega] Enabled AutoJoin.');
-	    {
-var add1, add2, add3, add4;
-var user = API.getUser().id;
-API.on(API.CHAT_COMMAND, CommandCalled)	    
-    var e = API.getWaitList().length;
-    var t = API.getTimeRemaining();
-    var n = API.getWaitListPosition(user);
-    if (n > -1 || API.getBoothPosition(user) > -1) {
-        API.chatLog("You are currently in the queue, the bot will add you back into the queue if you leave it", false);
-        cancelDetect();
-        return
+	    console.log("singleshot running");
+    waitingCount = API.getWaitList().length;
+    if (waitingCount < 50) {
+        API.djJoin()
     }
-    if (e < 50) {
-        API.djJoin();
-        add1 = setTimeout(function() {
-            if (API.getWaitListPosition(user) > -1) {
-                API.chatLog("Queue had a space free, you were added", false);
-                cancelDetect();
-                return
-            }
-        }, 1e3)
-    }
-    API.on(API.WAIT_LIST_UPDATE, singleShotJoin);
-    console.log("join in progress1");
-    add2 = setTimeout(function() {
-        if (API.getTimeRemaining() < 3) {
-            console.log("join in progress2");
-            add3 = setInterval(function() {
-                console.log("join in progress3");
-                API.djJoin();
-                t = API.getTimeRemaining();
-                n = API.getWaitListPosition(user);
-                if (n > -1 || t > 3) {
-                    add4 = setTimeout(function() {
-                        if (n > -1) {
-                            API.chatLog("Join method 2 successful", false);
-                            cancelDetect();
-                            return
-                        } else if (t > 3) {
-                            console.log("Join method 2 failed, attempting again");
-                            cancelFailed();
-                            return
-                        }
-                    }, 1e3)
-                }
-            }, 40)
-        } else {
-            console.log("song was skipped, trying again");
-            failed()
+    setTimeout(function() {
+        if (API.getWaitListPosition(user) > -1) {
+            cancel();
+            API.chatLog("Join method 1 successful", false);
+            detect()
         }
-    }, t * 1e3 - 1500)
-}
+    }, 5e3)
     }
 }
