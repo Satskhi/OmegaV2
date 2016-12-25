@@ -88,7 +88,7 @@ var Omega = (function () {
             $($($('div[data-cid^="' + msg.cid + '"]').addClass('omega-vip')).children('.msg')).children('.from').prepend('<i title="Omega Vip" class="icon"style="width:16px;height:16px;background: url(\'https://i.imgur.com/i08kSvq.png\')">')
         }
         // Supporter
-        if ([4453527].indexOf(msg.uid) !== -1) {
+        if ([4453527, 5280078].indexOf(msg.uid) !== -1) {
             $($($('div[data-cid^="' + msg.cid + '"]').addClass('omega-vip')).children('.msg')).children('.from').prepend('<i title="Supporter" class="icon"style="width:16px;height:16px;background: url(\'https://i.imgur.com/f1GSYq9.png\')">')
         }
     });
