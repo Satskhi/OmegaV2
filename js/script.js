@@ -219,7 +219,7 @@ function autowoot() {
         $('.omega-theme-toggle-autowoot').children('.omega-menu-icon').show();
         omegaTheme.autowoot = true;
         console.info('[Omega] Enabled autowoot.');
-		API.on(API.DJ_ADVANCE, callback);
+		API.on(API.ADVANCE, callback);
 			setTimeout(function callback(obj) { 
 				$('#woot').click();
 			}, 1000);	
