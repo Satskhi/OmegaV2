@@ -214,9 +214,27 @@ function autowoot() {
         $('.omega-theme-toggle-autowoot').children('.omega-menu-icon').hide();
         omegaTheme.autowoot = false;
         console.info('[Omega] Disabled autowoot.');
+		function stopWooting() {
+			API.off(API.ADVANCE, callback);
+			wootSong();
+		}
     } else {
         $('.omega-theme-toggle-autowoot').children('.omega-menu-icon').show();
         omegaTheme.autowoot = true;
         console.info('[Omega] Enabled autowoot.');
+		function startWooting() {
+			stopWooting();
+			API.on(API.ADVANCE, callback);
+			wootSong();
+		}
+		function callback(obj) {
+			wootSong();
+		}
+		var wooting = true;
+		function wootSong() {
+			if(wooting) {
+				$('#woot').click();
+			}
+		}
     }
 }
