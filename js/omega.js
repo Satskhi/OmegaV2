@@ -2,7 +2,7 @@
 var omegaTheme = $.extend({
    	rory: false,
     	edt: false,
-	special: true,
+	special: false,
 });
 var CssOmega = document.getElementById('rcs-appright-button');
 if (CssOmega === null) {
@@ -44,7 +44,7 @@ var Omega = (function () {
 							<button class="accordion">Badge</button>
 							<div class="panel">
 							<div class="user omega-theme-toggle-special omega-menu-item" onclick="badgespecial()">
-									<i class="icon icon-check-blue omega-menu-icon" style="display: block;"></i>
+									<i class="icon icon-check-blue omega-menu-icon"></i>
 									<span class="name omega-menu-span">Special</span>
 								</div>
 							</div>
