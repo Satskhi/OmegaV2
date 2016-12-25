@@ -94,7 +94,7 @@ function autojoin() {
         var t = API.getTimeRemaining();
         var n = API.getWaitListPosition(user);
         if (n > -1) {
-            API.chatLog("You are currently in the queue, the bot will add you back into the queue if you leave it", false);
+            //API.chatLog("You are currently in the queue, the bot will add you back into the queue if you leave it", false);
             cancelDetect();
             return
         }
@@ -102,7 +102,7 @@ function autojoin() {
             API.djJoin();
             add1 = setTimeout(function() {
                 if (API.getWaitListPosition(user) > -1) {
-                    API.chatLog("Queue had a space free, you were added", false);
+                    //API.chatLog("Queue had a space free, you were added", false);
                     cancelDetect();
                     return
                 }
@@ -121,11 +121,11 @@ function autojoin() {
                     if (n > -1 || t > 3) {
                         add4 = setTimeout(function() {
                             if (n > -1) {
-                                API.chatLog("Join method 2 successful", false);
+                                //API.chatLog("Join method 2 successful", false);
                                 cancelDetect();
                                 return
                             } else if (t > 3) {
-                                console.log("Join method 2 failed, attempting again");
+                                //console.log("Join method 2 failed, attempting again");
                                 cancelFailed();
                                 return
                             }
@@ -187,7 +187,7 @@ function autojoin() {
         setTimeout(function() {
             if (API.getWaitListPosition(user) > -1) {
                 cancel();
-                API.chatLog("Join method 1 successful", false);
+                //API.chatLog("Join method 1 successful", false);
                 detect();
             }
         }, 5e3)
