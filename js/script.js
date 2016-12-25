@@ -219,10 +219,13 @@ function autowoot() {
         $('.omega-theme-toggle-autowoot').children('.omega-menu-icon').show();
         omegaTheme.autowoot = true;
         console.info('[Omega] Enabled autowoot.');
-		API.on(API.ADVANCE, function callback(obj) {
-			setTimeout(function(){
-				$('#woot').click();
-			}, 1000);
-		});	
+		API.on(API.ADVANCE, callback);
+		function callback() {
+			console.log("AutoWoot running");
+			waitingCount = API.getWaitList().length;
+			setTimeout(function() {
+				$('#woot').click();    
+			}, 1000)
+		}		
     }
 }
