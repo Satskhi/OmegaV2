@@ -213,13 +213,13 @@ function autowoot() {
     if (omegaTheme.autowoot === true) {
         $('.omega-theme-toggle-autowoot').children('.omega-menu-icon').hide();
         omegaTheme.autowoot = false;
-        console.info('[Omega] Disabled autowoot.');
-		API.off(API.ADVANCE, callback);
+	API.off(API.DJ_ADVANCE, callback);
+        console.info('[Omega] Disabled autowoot.');		
     } else {
         $('.omega-theme-toggle-autowoot').children('.omega-menu-icon').show();
         omegaTheme.autowoot = true;
-        console.info('[Omega] Enabled autowoot.');
-		API.on(API.ADVANCE, callback);		
+	API.on(API.DJ_ADVANCE, callback);
+        console.info('[Omega] Enabled autowoot.');		
     }
 }
 
