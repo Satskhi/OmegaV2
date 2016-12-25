@@ -87,12 +87,10 @@ function autojoin() {
         $('.omega-theme-toggle-autojoin').children('.omega-menu-icon').show();
         omegaTheme.autojoin = true;
         console.info('[Omega] Enabled AutoJoin.');
-	     setTimeout(function(){
-        console.log("singleshot running");
-    waitingCount = API.getWaitList().length;
-    if (waitingCount < 50) {
-        API.djJoin()
-    }, 5e3);
-    }, 1000);
-    }
+		setTimeout(function(){
+			if (waitingCount < 50) {
+				API.djJoin()
+			}, 1000);
+		
+    }	
 }
