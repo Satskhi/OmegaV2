@@ -33,7 +33,6 @@ var Omega = (function () {
 									<i class="icon icon-check-blue omega-menu-icon"></i>
 									<span class="name omega-menu-span">AutoJoin</span>
 								</div>
-							</div>
 							<div class="user omega-theme-toggle-autowoot omega-menu-item" onclick="autowoot()">
 									<i class="icon icon-check-blue omega-menu-icon"></i>
 									<span class="name omega-menu-span">AutoWoot</span>
