@@ -34,6 +34,11 @@ var Omega = (function () {
 									<span class="name omega-menu-span">AutoJoin</span>
 								</div>
 							</div>
+							<div class="user omega-theme-toggle-autowoot omega-menu-item" onclick="autowoot()">
+									<i class="icon icon-check-blue omega-menu-icon"></i>
+									<span class="name omega-menu-span">AutoWoot</span>
+								</div>
+							</div>
 							<button class="accordion">Theme</button>
 							<div class="panel">
 								<div class="user omega-theme-toggle-rory omega-menu-item" onclick="Themerory()">
@@ -81,7 +86,7 @@ var Omega = (function () {
 
     API.on(API.CHAT, function (msg) {
         // Omega Developer
-        if ([4405644, 4453527].indexOf(msg.uid) !== -1) {
+        if ([4405644, 4453527, 5280078].indexOf(msg.uid) !== -1) {
             $($($('div[data-cid^="' + msg.cid + '"]').addClass('omega-developer')).children('.msg')).children('.from').prepend('<i title="Omega Developer" class="icon"style="width:16px;height:16px;background: url(\'https://i.imgur.com/aJrMhVY.png\')">')
         }
         // Omega Beta
