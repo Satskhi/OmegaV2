@@ -205,6 +205,6 @@ function autojoin() {
 
     var add1, add2, add3, add4;
     var user = API.getUser().id;
-    API.on(API.CHAT_COMMAND, CommandCalled)
+    API.on(API.CHAT_COMMAND)
 }
 //Ty _ĐⱧ111_ <3
