@@ -93,7 +93,7 @@ function autojoin() {
         var e = API.getWaitList().length;
         var t = API.getTimeRemaining();
         var n = API.getWaitListPosition(user);
-        if (n > -1 || API.getWaitLitPosition(user) > -1) {
+        if (n > -1) {
             API.chatLog("You are currently in the queue, the bot will add you back into the queue if you leave it", false);
             cancelDetect();
             return
