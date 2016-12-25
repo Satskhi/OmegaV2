@@ -42,7 +42,7 @@ var Omega = (function () {
 							
 							<button class="accordion">Badge</button>
 							<div class="panel">
-							<p>Lorem ipsum...</p>
+							<p>Coming soon...</p>
 							</div>
 							<!-- -->
                         </div>
