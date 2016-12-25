@@ -87,11 +87,17 @@ function autojoin() {
         $('.omega-theme-toggle-autojoin').children('.omega-menu-icon').show();
         omegaTheme.autojoin = true;
         console.info('[Omega] Enabled AutoJoin.');
-	    
-	    setTimeout(function(){ 
+		var user = API.getUser().id;
 		waitingCount = API.getWaitList().length;
 			if (waitingCount < 50) {
-		API.djJoin();
-	}, 1000);
+				API.djJoin()
+    			}
+	    		setTimeout(function() {
+				if (API.getWaitListPosition(user) > -1) {
+		    		cancel();
+		    		API.chatLog("Join method 1 successful", false);
+		    		detect()
+				}
+	    		}, 5e3)
     }
 }
