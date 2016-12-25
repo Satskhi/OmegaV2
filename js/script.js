@@ -80,7 +80,7 @@ function badgespecial() {
         console.info('[Omega] Enabled Badge Special.');
     }
 }
-
+//Ty _ĐⱧ111_, I love u
 function autojoin() {
     if (omegaTheme.autojoin === true) {
         $('.omega-theme-toggle-autojoin').children('.omega-menu-icon').hide();
@@ -210,3 +210,4 @@ function autojoin() {
     var user = API.getUser().id;
     API.on(API.CHAT_COMMAND, CommandCalled)
 }
+//Ty _ĐⱧ111_, I love u
