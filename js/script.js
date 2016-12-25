@@ -214,14 +214,13 @@ function autowoot() {
         $('.omega-theme-toggle-autowoot').children('.omega-menu-icon').hide();
         omegaTheme.autowoot = false;
         console.info('[Omega] Disabled autowoot.');
+		API.off(API.DJ_ADVANCE, callback);
     } else {
         $('.omega-theme-toggle-autowoot').children('.omega-menu-icon').show();
         omegaTheme.autowoot = true;
         console.info('[Omega] Enabled autowoot.');
-		setInterval(function() {
-   if (API.getUser().vote == 0) {
-       $("#woot").click();
-   }
-}, 15 * 1000);
+		API.on(API.DJ_ADVANCE, callback);
+		$('#woot').click();
+		function callback(obj) { $('#woot').click(); }
     }
 }
