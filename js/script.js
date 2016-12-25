@@ -221,7 +221,7 @@ function autowoot() {
     if (omegaTheme.autowoot === true) {
         $('.omega-theme-toggle-autowoot').children('.omega-menu-icon').hide();
         omegaTheme.autowoot = false;
-		API.off(APIADVANCE, callback);
+		API.off(API.ADVANCE, callback);
 		wootSong();
 		console.info('[Omega] Disabled autowoot.');
     } else {
