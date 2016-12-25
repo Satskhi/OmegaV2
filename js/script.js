@@ -220,11 +220,10 @@ function autowoot() {
         omegaTheme.autowoot = true;
         console.info('[Omega] Enabled autowoot.');
 		API.on(API.DJ_ADVANCE, callback);
-		setTimeout(function(){
-			$('#woot').click();
-		}, 1000);
+		$('#woot').click();
 		function callback(obj) { 
+		setTimeout(function(){
 			$('#woot').click(); }
-		
+		}, 1000);
     }
 }
