@@ -239,7 +239,7 @@ function download() {
         omegaTheme.downloadOmega = false;
         $('.omega-theme-toggle-downloadmp3').children('.omega-menu-icon').hide();
     } else {
-        $('#vote').append('<div id="OmegaDownload" class="crowd-response" onclick="downloadmp3();"><div class="top">Download</div><div class="bottom">MP3</div></div>');
+        $('#vote').append('<div id="OmegaDownload" class="crowd-response" onclick="downloadmp3();"><div class="top"><i class="icon icon-woot"></i><span class="label">Mp3</span></div><div class="bottom">Download</div></div>');
         console.info('[Omega] Download Button Enabled');
         omegaTheme.downloadOmega = true;
         $('.omega-theme-toggle-downloadmp3').children('.omega-menu-icon').show();
