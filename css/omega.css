@@ -45,7 +45,9 @@ div.panel.show {
 #vote {
 	width: 340px !important;
 }
-
+#OmegaDownload .bottom {
+    background: rgba(212, 23, 119, 0.5);
+}
 a {
 	color: #5CBE59;
 	text-decoration: none;
