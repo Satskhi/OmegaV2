@@ -42,7 +42,7 @@ div.panel.show {
     border-bottom: 1px dotted black;
 }
 
-.tooltipOmega .tooltipOmega {
+.tooltipOmega .tooltiptextOmega {
     visibility: hidden;
     width: 120px;
     background-color: black;
@@ -56,7 +56,7 @@ div.panel.show {
     z-index: 1;
 }
 
-.tooltipOmega:hover .tooltipOmega {
+.tooltipOmega:hover .tooltiptextOmega {
     visibility: visible;
 }
 
