@@ -5,7 +5,7 @@ var omegaTheme = $.extend({
 	special: false,
 	autojoin: false,
 	autowoot: false,
-	downloadOmega: true,
+	downloadOmega: false,
 });
 var CssOmega = document.getElementById('rcs-appright-button');
 if (CssOmega === null) {
