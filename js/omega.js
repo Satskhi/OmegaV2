@@ -30,7 +30,8 @@ var Omega = (function () {
 							<!-- -->
 							<button class="accordion">Auto-Woot</button>
 							<div class="panel">
-							<div class="omega-theme-toggle-downloadmp3 omega-menu-item" onclick="download()">
+							<div class="omega-theme-toggle-downloadmp3 omega-menu-item tooltipOmega" onclick="download()">
+								<span class="tooltiptextOmega">YouTube only, does not work on soundcloud</span>
 								<i class="icon icon-check-blue omega-menu-icon"></i>
 									<span class="name omega-menu-span">Download Button</span>
 							</div>
