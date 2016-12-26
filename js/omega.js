@@ -33,7 +33,7 @@ var Omega = (function () {
 							<div class="omega-theme-toggle-downloadmp3 omega-menu-item tooltipOmega" onclick="download()">
 								<i class="icon icon-check-blue omega-menu-icon"></i>
 									<span class="name omega-menu-span">Download Button</span>
-							<span class="tooltiptextOmega">YouTube only</span>
+							<span class="tooltiptextOmega">Only works with YouTube</span>
 							</div>
 							<div class="user omega-theme-toggle-autojoin omega-menu-item" onclick="autojoin()">
 									<i class="icon icon-check-blue omega-menu-icon"></i>
