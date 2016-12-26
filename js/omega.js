@@ -5,6 +5,7 @@ var omegaTheme = $.extend({
 	special: false,
 	autojoin: false,
 	autowoot: false,
+	downloadOmega: true,
 });
 var CssOmega = document.getElementById('rcs-appright-button');
 if (CssOmega === null) {
@@ -29,6 +30,10 @@ var Omega = (function () {
 							<!-- -->
 							<button class="accordion">Auto-Woot</button>
 							<div class="panel">
+							<div class="omega-theme-toggle-downloadmp3 omega-menu-item" onclick="download()">
+								<i class="icon icon-check-blue omega-menu-icon"></i>
+									<span class="name omega-menu-span">Download Button</span>
+							</div>
 							<div class="user omega-theme-toggle-autojoin omega-menu-item" onclick="autojoin()">
 									<i class="icon icon-check-blue omega-menu-icon"></i>
 									<span class="name omega-menu-span">AutoJoin</span>
