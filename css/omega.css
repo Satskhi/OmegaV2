@@ -42,6 +42,9 @@ div.panel.show {
     left:230px !important;
 }
 
+#vote {
+	width: 340px !important;
+}
 
 a {
 	color: #5CBE59;
