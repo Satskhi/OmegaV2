@@ -232,3 +232,20 @@ function autowoot() {
         console.info('[Omega] Enabled autowoot.');		
     }
 }
+function download() {
+    if (omegasettings.downloadOmega === true) {
+        $('#OmegaDownload').remove();
+        console.info('[Omega] Download Button Disabled');
+        omegasettings.downloadOmega = false;
+        $('.omega-theme-toggle-downloadmp3').children('.omega-menu-icon').hide();
+    } else {
+        $('#vote').append('<div id="OmegaDownload" class="crowd-response" onclick="downloadmp3();"><div class="top">Download</div><div class="bottom">MP3</div></div>');
+        console.info('[Omega] Download Button Enabled');
+        omegasettings.downloadOmega = true;
+        $('.omega-theme-toggle-downloadmp3').children('.omega-menu-icon').show();
+    }
+}							
+function downloadmp3() {
+    var uri = "https://youtube.com/watch?v=" + API.getMedia().cid;
+    window.open('https://www.youtubeinmp3.com/fetch/?video=' + uri);
+}
