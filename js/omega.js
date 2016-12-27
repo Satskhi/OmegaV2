@@ -7,6 +7,13 @@ var omegaTheme = $.extend({
 	autowoot: false,
 	downloadOmega: false,
 });
+var versionMsg = "It's alive!";
+var alertMsg = "This is a BETA build." + "<br>" +  "It will buggy and likely missing a literal ton of features.";
+var startUpMsg = versionMsg + "<br>" + "<br>" + "Welcome to OmegaWootTheme" + "<br>";
+
+$('#chat-messages').append('<center style=color:#A77DC2 class="cm omega-greet">' +
+    [startUpMsg, alertMsg].join('<br>') + '</center>');
+
 var CssOmega = document.getElementById('rcs-appright-button');
 if (CssOmega === null) {
     var CssOmega = $('head').append('<link href="https://rawgit.com/Satskhi/ScriptTest/master/omegatest/menuwithoutrcs.css" rel="stylesheet" type="text/css">');
