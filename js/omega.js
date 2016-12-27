@@ -61,14 +61,15 @@ var Omega = (function () {
 									<i class="icon icon-check-blue omega-menu-icon"></i>
 									<span class="name omega-menu-span">Edt</span>
 								</div>
+								<div class="user omega-theme-toggle-special omega-menu-item" onclick="badgespecial()">
+									<i class="icon icon-check-blue omega-menu-icon"></i>
+									<span class="name omega-menu-span">Special Badges</span>
+								</div>
 							</div>
 							
 							<button class="accordion">Badge</button>
 							<div class="panel">
-							<div class="user omega-theme-toggle-special omega-menu-item" onclick="badgespecial()">
-									<i class="icon icon-check-blue omega-menu-icon"></i>
-									<span class="name omega-menu-span">Special</span>
-								</div>
+							Coming soon...
 							</div>
 							<!-- -->
                         </div>
