@@ -72,7 +72,7 @@ var Omega = (function () {
 								Coming soon...
 								<label>
 								    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(1)">
-								    <img src="https://rcs.radiant.dj/img/plugdj/badges/bdg-ba.png" width="19px">
+								    <img src="https://i.imgur.com/o9hAVCH.png" width="19px">
 								</label>
 								<label>
 								    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(2)">
