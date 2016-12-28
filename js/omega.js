@@ -68,10 +68,18 @@ var Omega = (function () {
 							</div>
 							
 							<button class="accordion">Badge</button>
-							<div class="panel">
-							Coming soon...
-							</div>
-							<!-- -->
+							<div class="panel show">
+								Coming soon...
+								<label>
+								    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(1)">
+								    <img src="https://rcs.radiant.dj/img/plugdj/badges/bdg-ba.png" width="19px">
+								</label>
+								<label>
+								    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(2)">
+								    <img src="https://rcs.radiant.dj/img/plugdj/badges/bdg-ba.png" width="19px">
+								</label>
+								</div>						
+						<!-- -->
                         </div>
                     </div>
                 </div>
