@@ -253,32 +253,32 @@ function downloadmp3() {
 //-----------------------------------------------------------------
 
 function badgeMod(bm){
-var user = API.getUser().id; 
-if (bm==1) {
-	$('#badgeOmegaMod').remove()
-} else if (bm==2) {
-	console.log(user);
-	$("<style id='badgeOmegaMod' type='text/css'> [data-cid^='"+(user)+"-'] .badge-box .bdg, #user-rollover.id-"+(user)+" .badge-box .bdg { border-radius: 5px !important; background-image: url('https://rcs.radiant.dj/img/plugdj/badges/bdg-ba.png') !important; background-repeat: no-repeat !important; background-size: 30px !important; background-position: center;} </style>").appendTo("head");
-} else if (bm==3) {
-	console.log(user);
-	$("<style id='badgeOmegaMod' type='text/css'> [data-cid^='"+(user)+"-'] .badge-box .bdg, #user-rollover.id-"+(user)+" .badge-box .bdg { border-radius: 5px !important; background-image: url('https://rcs.radiant.dj/img/plugdj/badges/bdg-ba.png') !important; background-repeat: no-repeat !important; background-size: 30px !important; background-position: center;} </style>").appendTo("head");
-} else if (bm==4) {
-	$('#badgeOmegaMod').remove()
-	$("<style id='badgeOmegaMod' type='text/css'> .badge .bdg.g, .badge-box .bdg.g {background-image: url(https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-80sb-e02.png);background-size: 30px;} </style>").appendTo("head");
-} else if (bm==5) {
-	console.log(user);
-	$("<style id='badgeOmegaMod' type='text/css'> [data-cid^='"+(user)+"-'] .badge-box .bdg, #user-rollover.id-"+(user)+" .badge-box .bdg { border-radius: 5px !important; background-image: url('https://rcs.radiant.dj/img/plugdj/badges/bdg-ba.png') !important; background-repeat: no-repeat !important; background-size: 30px !important; background-position: center;} </style>").appendTo("head");
-} else if (bm==6) {
-	console.log(user);
-	$("<style id='badgeOmegaMod' type='text/css'> [data-cid^='"+(user)+"-'] .badge-box .bdg, #user-rollover.id-"+(user)+" .badge-box .bdg { border-radius: 5px !important; background-image: url('https://rcs.radiant.dj/img/plugdj/badges/bdg-ba.png') !important; background-repeat: no-repeat !important; background-size: 30px !important; background-position: center;} </style>").appendTo("head");
-} else if (bm==7) {
-	console.log(user);
-	$("<style id='badgeOmegaMod' type='text/css'> [data-cid^='"+(user)+"-'] .badge-box .bdg, #user-rollover.id-"+(user)+" .badge-box .bdg { border-radius: 5px !important; background-image: url('https://rcs.radiant.dj/img/plugdj/badges/bdg-ba.png') !important; background-repeat: no-repeat !important; background-size: 30px !important; background-position: center;} </style>").appendTo("head");
-} else if (bm==8) {
-	console.log(user);
-	$("<style id='badgeOmegaMod' type='text/css'> [data-cid^='"+(user)+"-'] .badge-box .bdg, #user-rollover.id-"+(user)+" .badge-box .bdg { border-radius: 5px !important; background-image: url('https://rcs.radiant.dj/img/plugdj/badges/bdg-ba.png') !important; background-repeat: no-repeat !important; background-size: 30px !important; background-position: center;} </style>").appendTo("head");
-} else {
-	console.log(user);
-	$("<style id='badgeOmegaMod' type='text/css'> [data-cid^='"+(user)+"-'] .badge-box .bdg, #user-rollover.id-"+(user)+" .badge-box .bdg { border-radius: 5px !important; background-image: url('https://rcs.radiant.dj/img/plugdj/badges/bdg-ba.png') !important; background-repeat: no-repeat !important; background-size: 30px !important; background-position: center;} </style>").appendTo("head");
-}
+	var user = API.getUser().id; 
+	if (bm==1) {
+		$('#badgeOmegaMod').remove()
+	} else if (bm==2) {
+		console.log(user);
+		$("<style id='badgeOmegaMod' type='text/css'> [data-cid^='"+(user)+"-'] .badge-box .bdg, #user-rollover.id-"+(user)+" .badge-box .bdg { border-radius: 5px !important; background-image: url('https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-80sb01.png') !important; background-repeat: no-repeat !important; background-size: 30px !important; background-position: center;} </style>").appendTo("head");
+	} else if (bm==3) {
+		console.log(user);
+		$("<style id='badgeOmegaMod' type='text/css'> [data-cid^='"+(user)+"-'] .badge-box .bdg, #user-rollover.id-"+(user)+" .badge-box .bdg { border-radius: 5px !important; background-image: url('https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-80sb-e01.png') !important; background-repeat: no-repeat !important; background-size: 30px !important; background-position: center;} </style>").appendTo("head");
+	} else if (bm==4) {
+		console.log(user);
+		$("<style id='badgeOmegaMod' type='text/css'> [data-cid^='"+(user)+"-'] .badge-box .bdg, #user-rollover.id-"+(user)+" .badge-box .bdg { border-radius: 5px !important; background-image: url('https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-80sb-e02.png') !important; background-repeat: no-repeat !important; background-size: 30px !important; background-position: center;} </style>").appendTo("head");
+	} else if (bm==5) {
+		console.log(user);
+		$("<style id='badgeOmegaMod' type='text/css'> [data-cid^='"+(user)+"-'] .badge-box .bdg, #user-rollover.id-"+(user)+" .badge-box .bdg { border-radius: 5px !important; background-image: url('https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-80sb-s01.png') !important; background-repeat: no-repeat !important; background-size: 30px !important; background-position: center;} </style>").appendTo("head");
+	} else if (bm==6) {
+		console.log(user);
+		$("<style id='badgeOmegaMod' type='text/css'> [data-cid^='"+(user)+"-'] .badge-box .bdg, #user-rollover.id-"+(user)+" .badge-box .bdg { border-radius: 5px !important; background-image: url('https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-80sset.png') !important; background-repeat: no-repeat !important; background-size: 30px !important; background-position: center;} </style>").appendTo("head");
+	} else if (bm==7) {
+		console.log(user);
+		$("<style id='badgeOmegaMod' type='text/css'> [data-cid^='"+(user)+"-'] .badge-box .bdg, #user-rollover.id-"+(user)+" .badge-box .bdg { border-radius: 5px !important; background-image: url('https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-2014hwset.png') !important; background-repeat: no-repeat !important; background-size: 30px !important; background-position: center;} </style>").appendTo("head");
+	} else if (bm==8) {
+		console.log(user);
+		$("<style id='badgeOmegaMod' type='text/css'> [data-cid^='"+(user)+"-'] .badge-box .bdg, #user-rollover.id-"+(user)+" .badge-box .bdg { border-radius: 5px !important; background-image: url('https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-2014wbb.png') !important; background-repeat: no-repeat !important; background-size: 30px !important; background-position: center;} </style>").appendTo("head");
+	} else {
+		console.log(user);
+		$("<style id='badgeOmegaMod' type='text/css'> [data-cid^='"+(user)+"-'] .badge-box .bdg, #user-rollover.id-"+(user)+" .badge-box .bdg { border-radius: 5px !important; background-image: url('https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-2015bday.png') !important; background-repeat: no-repeat !important; background-size: 30px !important; background-position: center;} </style>").appendTo("head");
+	}
 };
