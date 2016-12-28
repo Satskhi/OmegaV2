@@ -80,31 +80,31 @@ var Omega = (function () {
     <img src="https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-80sb01.png" width="19px">
 </label>
 <label>
-    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(2)">
+    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(3)">
     <img src="https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-80sb-e01.png" width="19px">
 </label>
 <label>
-    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(2)">
+    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(4)">
     <img src="https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-80sb-e02.png" width="19px">
 </label>
 <label>
-    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(2)">
+    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(5)">
     <img src="https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-80sb-s01.png" width="19px">
 </label>
 <label>
-    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(2)">
+    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(6)">
     <img src="https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-80sset.png" width="19px">
 </label>
 <label>
-    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(2)">
+    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(7)">
     <img src="https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-2014hwset.png" width="19px">
 </label>
 <label>
-    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(2)">
+    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(8)">
     <img src="https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-2014wbb.png" width="19px">
 </label>
 <label>
-    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(2)">
+    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(9)">
     <img src="https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-2015bday.png" width="19px">
 </label>
 								</div>						
