@@ -278,7 +278,7 @@ function badgeMod(bm){
 		$('#badgeOmegaMod').remove()
 		$("<style id='badgeOmegaMod' type='text/css'> [data-cid^='"+(user)+"-'] .badge-box .bdg, #user-rollover.id-"+(user)+" .badge-box .bdg { border-radius: 5px !important; background-image: url('https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-2014wbb.png') !important; background-repeat: no-repeat !important; background-size: 30px !important; background-position: center;} </style>").appendTo("head");
 	} else {
-		console.log(user);
+		$('#badgeOmegaMod').remove()
 		$("<style id='badgeOmegaMod' type='text/css'> [data-cid^='"+(user)+"-'] .badge-box .bdg, #user-rollover.id-"+(user)+" .badge-box .bdg { border-radius: 5px !important; background-image: url('https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-2015bday.png') !important; background-repeat: no-repeat !important; background-size: 30px !important; background-position: center;} </style>").appendTo("head");
 	}
 };
