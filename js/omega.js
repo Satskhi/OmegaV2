@@ -70,14 +70,43 @@ var Omega = (function () {
 							<button class="accordion">Badge</button>
 							<div class="panel show">
 								Coming soon...
+<br>
 								<label>
-								    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(1)">
-								    <img src="https://i.imgur.com/o9hAVCH.png" width="19px">
-								</label>
-								<label>
-								    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(2)">
-								    <img src="https://rcs.radiant.dj/img/plugdj/badges/bdg-ba.png" width="19px">
-								</label>
+    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(1)">
+    <img src="https://i.imgur.com/o9hAVCH.png" width="19px">
+</label>
+<label>
+    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(2)">
+    <img src="https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-80sb01.png" width="19px">
+</label>
+<label>
+    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(2)">
+    <img src="https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-80sb-e01.png" width="19px">
+</label>
+<label>
+    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(2)">
+    <img src="https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-80sb-e02.png" width="19px">
+</label>
+<label>
+    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(2)">
+    <img src="https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-80sb-s01.png" width="19px">
+</label>
+<label>
+    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(2)">
+    <img src="https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-80sset.png" width="19px">
+</label>
+<label>
+    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(2)">
+    <img src="https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-2014hwset.png" width="19px">
+</label>
+<label>
+    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(2)">
+    <img src="https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-2014wbb.png" width="19px">
+</label>
+<label>
+    <input type="radio" name="badgeOmegaMod" value="bdg-ba" onchange="badgeMod(2)">
+    <img src="https://rawgit.com/Satskhi/OmegaV2/master/badges/bdg-2015bday.png" width="19px">
+</label>
 								</div>						
 						<!-- -->
                         </div>
