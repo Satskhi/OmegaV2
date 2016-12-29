@@ -69,7 +69,7 @@ var Omega = (function () {
 							</div>
 							
 							<button class="accordion">Badge</button>
-							<div class="panel show">
+							<div class="panel">
 <br>
 								<label>
     <input type="radio" name="badgeOmegaMod" onchange="badgeMod(1)">
