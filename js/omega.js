@@ -22,6 +22,7 @@ if (CssOmega === null) {
 };
 $('head').append('<link href="https://rawgit.com/Satskhi/OmegaV2/master/css/omega.css" rel="stylesheet" type="text/css">');
 $('head').append('<script type="text/javascript" src="https://rawgit.com/Satskhi/OmegaV2/master/js/script.js"></script>');
+$('head').append('<script type="text/javascript" src="https://rawgit.com/Satskhi/OmegaV2/master/js/badge.js"></script>');
 
 // MENU
 var Omega = (function () {
