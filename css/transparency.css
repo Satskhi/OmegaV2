@@ -1,0 +1,117 @@
+#dashboard,
+#dashboard .search,
+.communities .grid .cell,
+.communities .grid .cell .bar,
+.communities .grid .cell .favorite,
+.communities .grid .cell .meta,
+.communities .grid .cell .meta .join,
+.tab-menu button,
+.tab-menu button:hover,
+#footer, 
+#room .app-header,
+#room-settings, 
+#room-settings-menu,
+#room-settings .general-settings,
+#room .app-right, 
+#rs-skip-button, 
+#history-button, 
+#app-menu, #app-menu .list, 
+#footer-user .buttons .button:hover, 
+#app-menu .list .item:hover, 
+#app-menu .list .logout:hover, 
+#app-menu .list .rcsunload:hover, 
+#chat .cm:nth-child(2n+1), 
+#chat-input,
+#chat-header, 
+#chat-messages, 
+#user-lists .list.staff .group, 
+#user-lists .list .user:hover, 
+#waitlist .list .user, 
+#rcs-menu .search, 
+#history-panel,
+#footer-user .back, 
+#footer-user .signup,
+.app-right .friends, 
+.app-right .friends .header,
+.header-panel-button.selected,
+.jspDrag,
+.jspDrag:hover, 
+.jspHorizontalBar, 
+.jspVerticalBar, 
+.jspTrack, 
+.jspTrack .jspActive, 
+.jspTrack .jspHover,
+#user-view, 
+#user-view .user-content,
+#user-menu,
+#waitlist .list .sortable-placeholder,
+#user-inventory .history .list .row,
+#user-menu .item.selected,
+#room-settings .general-settings .option .dropdown,
+#user-view .menu-points .dropdown,
+#user-settings .container .dropdown,
+.dropdown.open dd,
+.dropdown dd .row:hover,
+.user-content.profile .meta .blurb .box, 
+.user-content.profile .meta .blurb input,
+.subscribe-button,
+.user-content.profile .notifications .row,
+.experience .xp .bar,
+.experience .levels .level,
+.experience .levels .level .label,
+.user-content .grid .cell, 
+.user-content.communities .grid .cell,
+#user-inventory .history .list .row .item,
+#user-store .misc .grid .cell .title-bar,
+#user-friends .list .row,
+#user-friends .list .row .buttons button,
+#dj-button,
+#woot, 
+#grab, 
+#meh
+{
+background: rgba(0, 0, 0, 0.5) !important;
+}
+
+
+#woot .bottom,
+#woot.selected
+{
+background: #90ad2f !important;
+}
+#grab .bottom,
+#grab.selected 
+{
+background: #aa74ff !important;
+}
+#meh .bottom,
+#meh.selected
+{
+background: #c42e3b !important;
+}
+
+
+.tab-menu button.selected,
+#user-rollover,
+#user-rollover .info,
+#user-rollover .actions .action:hover,
+#room-settings-menu .item.selected,
+#footer-user .info
+{
+background: rgba(0, 0, 0, 0.75) !important;
+}
+
+#chat .mention.is-dj, #chat .mention.is-staff
+{
+background:  linear-gradient(135deg,#ac76ff 0,rgba(0, 0, 0, 0.5) 13%,rgba(0, 0, 0, 0.5) 100% )!important
+}
+
+.user-content .grid .cell .top
+{
+background: linear-gradient(to bottom,rgba(0, 0, 0, 0.5) 0,rgba(0, 0, 0, 0.5) 56%,#111317 73%,#282c35 100%);
+}
+
+.user-content .grid .cell:hover>.top
+{
+background: linear-gradient(to bottom, #282c35 0,rgba(0, 0, 0, 0.5) 56%,#111317 73%,rgba(0, 0, 0, 0.5) 100%);
+}
