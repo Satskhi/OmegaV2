@@ -1,6 +1,6 @@
 #room .room-background{background:url(https://rawgit.com/Satskhi/PlugCssSatskhi/master/img/wallpaper-rory.jpg) no-repeat!important}
 #avatars-container::before{content:url(https://rawgit.com/Satskhi/PlugCssSatskhi/master/img/cabine.png);position:absolute;bottom:35px;width:100%;text-align:center;z-index:2}
-/* Satskhi */
+/* Satskhi
 [data-cid^="4405644-"] .badge-box .bdg, #user-rollover.id-4405644 .badge-box .bdg, [data-cid^="4405644-"] .badge-box.no-badge i, #user-rollover.id-4405644 .badge-box.no-badge i, [data-cid^="4405644-"] #footer-user .buttons .button .bdg, #user-rollover.id-4405644 .buttons .badge .bdg {
     background: url("https://rawgit.com/Satskhi/PlugCssSatskhi/master/img/badge/badge-4405644.png") !important;
 	-webkit-animation: bdg-4405644 5s steps(32) infinite; 
@@ -21,7 +21,16 @@
     from {background-position: 0px;}
     to {background-position: -960px;}
 }
-/* Satskhi */
+Satskhi */
+/*Satskhi */
+[data-cid^="4405644-"] .badge-box .bdg, #user-rollover.id-13720951 .badge-box .bdg {
+    border-radius: 5px !important;
+    background-image: url(https://i.imgur.com/qKqUrWG.gif) !important;
+    background-repeat: no-repeat !important;
+    background-size: auto 30px !important;
+    background-position: center;
+}
+/*Satskhi */
 /*@import url("https://rawgit.com/Satskhi/PlugCssSatskhi/master/css/user.css");*/
 
 #dashboard,
