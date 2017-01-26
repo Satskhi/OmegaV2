@@ -1,0 +1,92 @@
+.badge-box {
+	background: none !important;
+}
+.badge-box.no-badge i {
+ background-image: url("https://rawgit.com/Satskhi/PlugCssSatskhi/master/img/badge/no-badge.png");
+ background-repeat: no-repeat;
+ background-size: 30px;
+ top: 0px;
+ left: 0px;
+ width: 30px;
+ height: 30px;
+ border: none;
+}
+/*Yukine*/
+[data-cid^="4405644-"] .badge-box .bdg, 
+#user-rollover.id-4405644 .badge-box .bdg,
+#chat-messages .fromID-4405644 .badge-box i,
+#chat-messages  .id-4405644 .badge-box i,
+/*Chuck*/
+[data-cid^="3616716-"] .badge-box .bdg, 
+#user-rollover.id-3616716 .badge-box .bdg,
+#chat-messages .fromID-3616716 .badge-box i,
+#chat-messages  .id-3616716 .badge-box i,
+/*supimjosh*/
+[data-cid^="5838451-"] .badge-box .bdg, 
+#user-rollover.id-5838451 .badge-box .bdg,
+#chat-messages .fromID-5838451 .badge-box i,
+#chat-messages  .id-5838451 .badge-box i,
+/*DH111*/
+/*[data-cid^="5280078-"] .badge-box .bdg, 
+#user-rollover.id-5280078 .badge-box .bdg,
+#chat-messages .fromID-5280078 .badge-box i,
+#chat-messages  .id-5280078 .badge-box i,*/
+/*Bot*/
+[data-cid^="13720951-"] .badge-box .bdg, 
+#user-rollover.id-13720951 .badge-box .bdg,
+#chat-messages .fromID-13720951 .badge-box i,
+#chat-messages  .id-13720951 .badge-box i {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+    border-radius: 0;
+    background-position: initial;
+    background-repeat: no-repeat !important
+}
+#chat-messages .fromID-4405644 .badge-box:hover,
+#chat-messages  .id-4405644 .badge-box:hover,
+#chat-messages .fromID-5838451 .badge-box:hover,
+#chat-messages  .id-5838451 .badge-box:hover,
+#chat-messages .fromID-3616716 .badge-box:hover,
+#chat-messages  .id-3616716 .badge-box:hover,
+#chat-messages .fromID-5280078 .badge-box:hover,
+#chat-messages  .id-5280078 .badge-box:hover,
+#chat-messages .fromID-13720951 .badge-box:hover,
+#chat-messages  .id-13720951 .badge-box:hover {
+    width: 75px;
+    height: 75px;
+    transition: 0.5s
+}
+[data-cid^="4405644-"] .badge-box .bdg, 
+#user-rollover.id-4405644 .badge-box .bdg,
+#chat-messages .fromID-4405644 .badge-box i,
+#chat-messages .id-4405644 .badge-box i {
+    background-image: url(https://i.imgur.com/Hk7kiJZ.gif);
+background-position: center;
+}
+
+[data-cid^="3616716-"] .badge-box .bdg, 
+#user-rollover.id-3616716 .badge-box .bdg,
+#chat-messages .fromID-3616716 .badge-box i,
+#chat-messages  .id-3616716 .badge-box i {
+    background-image: url(https://raw.githubusercontent.com/Satskhi/PlugCssSatskhi/master/img/badge/badge-3616716.gif);
+background-position: center;
+}
+[data-cid^="5838451-"] .badge-box .bdg, 
+#user-rollover.id-5838451 .badge-box .bdg,
+#chat-messages .fromID-5838451 .badge-box i,
+#chat-messages  .id-5838451 .badge-box i {
+    background-image: url(https://yt3.ggpht.com/-uRarWuKDAZM/AAAAAAAAAAI/AAAAAAAAAAA/j0MLX44bxnI/s100-c-k-no-mo-rj-c0xffffff/photo.jpg);
+background-position: center;
+}
+
+[data-cid^="13720951-"] .badge-box .bdg, 
+#user-rollover.id-13720951 .badge-box .bdg,
+#chat-messages .fromID-13720951 .badge-box i,
+#chat-messages  .id-13720951 .badge-box i {
+    background-image: url(http://i1260.photobucket.com/albums/ii571/LMFAOSPEAKS/LMFAO/113481459.gif);
+background-position: center;
+}
