@@ -29,7 +29,8 @@ if (BadgeOmega === null) {
 
 function badge(b) {
     if (b == 1) {
-        document.getElementById('Omega-Badge').setAttribute('href', 'https://rawgit.com/Satskhi/PlugCssSatskhi/master/css/user.css');
+        // document.getElementById('Omega-Badge').setAttribute('href', 'https://rawgit.com/Satskhi/PlugCssSatskhi/master/css/user.css');
+	document.getElementById('Omega-Badge').setAttribute('href', 'https://rawgit.com/Satskhi/OmegaV2/master/css/css.css');
     } else {
         document.getElementById('Omega-Badge').removeAttribute('href');
     }
