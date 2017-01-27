@@ -1001,14 +1001,6 @@ if (BadgeOmega === null) {
     BadgeOmega.remove();
 };
 
-function badge(b) {
-    if (b == 1) {
-        document.getElementById('Omega-Badge').setAttribute('href', 'https://rawgit.com/Satskhi/OmegaV2/master/css/css.css');
-    } else {
-        document.getElementById('Omega-Badge').removeAttribute('href');
-    }
-};
-
 function Themerory() {
     if (omegaTheme.rory === true) {
         $('.omega-theme-toggle-rory').children('.omega-menu-icon').hide();
@@ -1050,7 +1042,7 @@ function badgespecial() {
     } else {
         $('.omega-theme-toggle-special').children('.omega-menu-icon').show();
         omegaTheme.special = true;
-        document.getElementById('Omega-Badge').setAttribute('href', 'https://rawgit.com/Satskhi/PlugCssSatskhi/master/css/user.css');
+        document.getElementById('Omega-Badge').setAttribute('href', 'https://rawgit.com/Satskhi/OmegaV2/master/css/css.css');
         console.info('[Omega] Enabled Badge Special.');
     }
 }
