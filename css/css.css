@@ -65,6 +65,7 @@
 #chat-messages .id-4405644 .badge-box i {
     background-image: url(https://i.imgur.com/Hk7kiJZ.gif);
 background-position: center;
+	border-radius: 5px;
 }
 [data-cid^="4453527-"] .badge-box .bdg, 
 #user-rollover.id-4453527 .badge-box .bdg,
@@ -72,6 +73,7 @@ background-position: center;
 #chat-messages .id-4453527 .badge-box i {
     background-image: url(https://i.imgur.com/7RwKEIp.gif);
 background-position: center;
+	border-radius: 5px;
 }
 [data-cid^="3616716-"] .badge-box .bdg, 
 #user-rollover.id-3616716 .badge-box .bdg,
@@ -79,6 +81,7 @@ background-position: center;
 #chat-messages  .id-3616716 .badge-box i {
     background-image: url(https://raw.githubusercontent.com/Satskhi/PlugCssSatskhi/master/img/badge/badge-3616716.gif);
 background-position: center;
+	border-radius: 5px;
 }
 [data-cid^="5838451-"] .badge-box .bdg, 
 #user-rollover.id-5838451 .badge-box .bdg,
@@ -86,6 +89,7 @@ background-position: center;
 #chat-messages  .id-5838451 .badge-box i {
     background-image: url(https://yt3.ggpht.com/-uRarWuKDAZM/AAAAAAAAAAI/AAAAAAAAAAA/j0MLX44bxnI/s100-c-k-no-mo-rj-c0xffffff/photo.jpg);
 background-position: center;
+	border-radius: 5px;
 }
 
 [data-cid^="13720951-"] .badge-box .bdg, 
@@ -94,4 +98,5 @@ background-position: center;
 #chat-messages  .id-13720951 .badge-box i {
     background-image: url(https://i.imgur.com/7RwKEIp.gif);
 background-position: center;
+border-radius: 5px;
 }
