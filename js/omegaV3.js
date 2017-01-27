@@ -21,8 +21,6 @@ if (CssOmega === null) {
         var CssOmega = $('head').append('<link href="https://rawgit.com/Satskhi/ScriptTest/master/omegatest/menuwithrcs.css" rel="stylesheet" type="text/css">');
 };
 $('head').append('<link href="https://rawgit.com/Satskhi/OmegaV2/master/css/omega.css" rel="stylesheet" type="text/css">');
-$('head').append('<script type="text/javascript" src="https://rawgit.com/Satskhi/OmegaV2/master/js/script.js"></script>');
-$('head').append('<script type="text/javascript" src="https://rawgit.com/Satskhi/OmegaV2/master/js/badge.js"></script>');
 
 // MENU
 var Omega = (function () {
@@ -1005,7 +1003,7 @@ if (BadgeOmega === null) {
 
 function badge(b) {
     if (b == 1) {
-        document.getElementById('Omega-Badge').setAttribute('href', 'https://rawgit.com/Satskhi/PlugCssSatskhi/master/css/user.css');
+        document.getElementById('Omega-Badge').setAttribute('href', 'https://rawgit.com/Satskhi/OmegaV2/master/css/css.css');
     } else {
         document.getElementById('Omega-Badge').removeAttribute('href');
     }
