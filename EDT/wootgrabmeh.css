@@ -1,8 +1,11 @@
-#grab .bottom, #woot .bottom, #meh .bottom {background: none;}
+#woot .bottom, #grab .bottom, #meh .bottom {background: none;}
 #vote .crowd-response .top{height: 30px;}
 #vote .bottom  {top: 30px; height: 31px;}
 #vote .crowd-response .value {top: 10px;}
 #vote .crowd-response, #vote .votes-rs {background: rgba(0, 0, 0, 0.5);}
+#woot.selected {background: #90ad2f !important;}
+#grab.selected {background: #aa74ff !important;}
+#meh.selected {background: #c42e3b !important;}
 
 #grab .bottom:before {
     content: "";
