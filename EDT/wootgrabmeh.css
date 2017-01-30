@@ -1,0 +1,106 @@
+#grab .bottom, #woot .bottom, #meh .bottom {background: none;}
+#vote .crowd-response .top{height: 30px;}
+#vote .bottom  {top: 30px; height: 31px;}
+#vote .crowd-response .value {top: 10px;}
+#vote .crowd-response, #vote .votes-rs {background: rgba(0, 0, 0, 0.5);}
+
+#grab .bottom:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #aa74ff;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+#grab .bottom{
+background-image: linear-gradient(to top, #aa74ff 15%, rgba(0,0,0,0) 15%);
+transform: perspective(1px) translateZ(0);
+-webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+#grab .bottom:hover:before, #grab .bottom:focus:before, #grab .bottom:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+#woot .bottom:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #90ad2f;
+    border-radius: 0 0 0 4px;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+#woot .bottom{
+background-image: linear-gradient(to top, #90ad2f 15%, rgba(0,0,0,0) 15%);
+transform: perspective(1px) translateZ(0);
+-webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+#woot .bottom:hover:before, #woot .bottom:focus:before, #woot .bottom:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+#meh .bottom:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #c42e3b;
+    border-radius: 0 0 4px;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+#meh .bottom{
+background-image: linear-gradient(to top, #c42e3b 15%, rgba(0,0,0,0) 15%);
+transform: perspective(1px) translateZ(0);
+-webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+#meh .bottom:hover:before, #meh .bottom:focus:before, #meh .bottom:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
