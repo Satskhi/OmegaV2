@@ -1,0 +1,122 @@
+#room .app-right, #woot .bottom, #grab .bottom, #meh .bottom{background: none; }
+#chat-header, #user-lists, #waitlist, #rcs-menu {background: #0a0a0a}
+#chat-input {border-radius: 0 0 15px 15px;}
+.rcs-delete:hover {background: #f04f30;}
+#rcs-newmessages {border-radius: 15px 15px 0 0;}
+#woot {border-radius: 0 0 0 25px;}
+#woot.selected {background: #90ad2f !important;}
+#meh {border-radius: 0 0 35px 0;}
+#vote .crowd-response, #dj-button{background: rgba(0, 0, 0, 0.5);}
+#meh.selected {background: #c42e3b !important;}
+#dj-button {border-radius: 25px 0 25px 0;}
+#dj-button .left {border-radius: 25px 0 0 0;}
+
+#chat .cm .delete-button, #chat .cm .rcs-delete{border-radius: 15px 0 15px 15px;}
+#chat .cm:nth-child(2n+1) .delete-button, #chat .cm:nth-child(2n+1) .rcs-delete{border-radius: 15px 15px 0 15px;}
+
+
+#chat .cm:last-child{border-radius: 15px 0 0 0;}
+/*#chat .cm:nth-child(2n+1):last-child{border-radius: 15px 15px 0 0;}*/
+#chat .cm, #chat .cm:nth-child(2n+1) {
+ background: rgba(0, 0, 0, 0.75) !important;
+ box-shadow: inset 0 0 10px rgba(159, 104, 255, 0.2);
+ /*background-image: url();*/
+}
+
+
+#chat .cm {
+ border-radius: 15px 0 15px 0;
+}
+#chat .cm:nth-child(2n+1) {
+ border-radius: 0 15px 0 15px;
+}
+
+#chat .cm.is-developer {
+ border-radius: auto;
+ box-shadow: inset 0 0 10px rgba(0, 156, 221, 1);
+}
+
+#chat .cm.id-13720951 {
+ border-radius: auto;
+ -webkit-animation: botmessages 3000ms linear infinite;
+ -moz-animation: botmessages 3000ms linear infinite;
+ -ms-animation: botmessages  3000ms linear infinite;
+ -o-animation: botmessages 3000ms linear infinite;
+ animation: botmessages 3000ms linear infinite;
+}
+
+
+
+
+/* Animações */
+
+@keyframes botmessages {
+    0% {
+        box-shadow: inset 0 0 10px rgba(0, 156, 221, 1);
+    }
+    20% {
+        box-shadow: inset 0 0 10px rgba(0, 156, 221, 0.2);
+    }
+    40% {
+        box-shadow: inset 0 0 10px rgba(0, 156, 221, 1);
+    }
+    100% {
+        box-shadow: inset 0 0 10px rgba(0, 156, 221, 1);
+    }
+}
+@-moz-keyframes botmessages {
+    0% {
+        box-shadow: inset 0 0 10px rgba(0, 156, 221, 1);
+    }
+    20% {
+        box-shadow: inset 0 0 10px rgba(0, 156, 221, 0.2);
+    }
+    40% {
+        box-shadow: inset 0 0 10px rgba(0, 156, 221, 1);
+    }
+    100% {
+        box-shadow: inset 0 0 10px rgba(0, 156, 221, 1);
+    }
+}
+@-webkit-keyframes botmessages {
+    0% {
+        box-shadow: inset 0 0 10px rgba(0, 156, 221, 1);
+    }
+    20% {
+        box-shadow: inset 0 0 10px rgba(0, 156, 221, 0.2);
+    }
+    40% {
+        box-shadow: inset 0 0 10px rgba(0, 156, 221, 1);
+    }
+    100% {
+        box-shadow: inset 0 0 10px rgba(0, 156, 221, 1);
+    }
+}
+@-o-keyframes botmessages {
+    0% {
+        box-shadow: inset 0 0 10px rgba(0, 156, 221, 1);
+    }
+    20% {
+        box-shadow: inset 0 0 10px rgba(0, 156, 221, 0.2);
+    }
+    40% {
+        box-shadow: inset 0 0 10px rgba(0, 156, 221, 1);
+    }
+    100% {
+        box-shadow: inset 0 0 10px rgba(0, 156, 221, 1);
+    }
+}
+@-ms-keyframes botmessages {
+    0% {
+        box-shadow: inset 0 0 10px rgba(0, 156, 221, 1);
+    }
+    20% {
+        box-shadow: inset 0 0 10px rgba(0, 156, 221, 0.2);
+    }
+    40% {
+        box-shadow: inset 0 0 10px rgba(0, 156, 221, 1);
+    }
+    100% {
+        box-shadow: inset 0 0 10px rgba(0, 156, 221, 1);
+    }
+}
