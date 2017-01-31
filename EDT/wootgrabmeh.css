@@ -1,3 +1,115 @@
+/*.icon-woot {
+    background-position: -105px -280px;
+}
+.icon-grab {
+   background-position: -35px -280px;
+}
+.icon-meh {
+    background-position: -70px -280px;
+}
+#woot:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #90ad2f;
+    border-radius: 0 0 0 4px;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+#woot {
+background-image: linear-gradient(to top, #90ad2f 15%, rgba(0,0,0,0) 15%);
+transform: perspective(1px) translateZ(0);
+-webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+#woot:hover:before, #woot:focus:before, #woot:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+#grab:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #aa74ff;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+#grab{
+background-image: linear-gradient(to top, #aa74ff 15%, rgba(0,0,0,0) 15%);
+transform: perspective(1px) translateZ(0);
+-webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+#grab:hover:before, #grab:focus:before, #grab:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+#meh:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #c42e3b;
+    border-radius: 0 0 4px;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+#meh{
+background-image: linear-gradient(to top, #c42e3b 15%, rgba(0,0,0,0) 15%);
+transform: perspective(1px) translateZ(0);
+-webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+#meh:hover:before, #meh:focus:before, #meh:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}*/
+
+
+
 #woot .bottom, #grab .bottom, #meh .bottom {background: none;}
 #vote .crowd-response .top{height: 30px;}
 #vote .bottom  {top: 30px; height: 31px;}
