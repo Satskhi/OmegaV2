@@ -1,0 +1,40 @@
+#dj-button {
+    background: none;
+	transition: visibility 0s linear 0s;
+	left: 213.5px !important;
+	width: 72px;
+	-webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+#dj-button:hover {
+    background: rgba(0, 0, 0, 0.5);
+	transition-delay:0s;
+	left: 113.5px !important;
+	width: 230px;
+}
+#dj-button .left{
+	border-radius: 4px;
+}
+#dj-button > span {
+	position: absolute;
+	display: inline;
+	visibility:hidden;
+	opacity:0;
+	-webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+	background: none;
+	top: 10px;
+}
+
+#dj-button:hover > span {
+	position: absolute;
+	display: inline;
+	visibility:visible;
+	opacity:1;
+	transition-delay:0s;
+	top: 10px;
+}
