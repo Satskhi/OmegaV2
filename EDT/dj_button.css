@@ -1,8 +1,7 @@
 #dj-button {
     background: none;
 	transition: visibility 0s linear 0s;
-	left: 213.5px !important;
-	width: 72px;
+	width: 230px;
 	-webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
@@ -11,7 +10,6 @@
 #dj-button:hover {
     background: rgba(0, 0, 0, 0.5);
 	transition-delay:0s;
-	left: 113.5px !important;
 	width: 230px;
 }
 #dj-button .left{
