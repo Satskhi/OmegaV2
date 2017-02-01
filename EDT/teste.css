@@ -1,0 +1,491 @@
+#woot .bottom, #grab .bottom, #meh .bottom {background: none;}
+#vote .crowd-response, #vote .votes-rs {background: rgba(0, 0, 0, 0.5);}
+
+#vote .top .icon-woot {
+    background-position: -105px -280px;
+}
+#woot .bottom {
+background-image: linear-gradient(to top, #90ad2f 15%, rgba(0,0,0,0) 15%);
+}
+#woot:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #90ad2f;
+    border-radius: 4px 0 0 4px;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+#woot {
+background-image: linear-gradient(to top, #90ad2f 15%, rgba(0,0,0,0) 15%);
+transform: perspective(1px) translateZ(0);
+-webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+#woot.selected {
+-webkit-animation-name: wootPulse;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes wootPulse {
+  from {background-image: linear-gradient(to top, #90ad2f 5%, rgba(0,0,0,0) 5%); -webkit-box-shadow: inset 0 0 9px #90ad2f; }
+  50% { background-image: linear-gradient(to top, #90ad2f 5%, rgba(0,0,0,0) 5%); -webkit-box-shadow: inset 0 0 50px #90ad2f; }
+  to { background-image: linear-gradient(to top, #90ad2f 5%, rgba(0,0,0,0) 5%); -webkit-box-shadow: inset 0 0 9px #90ad2f; }
+}
+#woot:hover:before, #woot:focus:before, #woot:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+#vote .top .icon-grab {
+   background-position: -35px -280px;
+}
+#grab .bottom {
+background-image: linear-gradient(to top, #aa74ff 15%, rgba(0,0,0,0) 15%);
+}
+#grab:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #aa74ff;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+#grab {
+background-image: linear-gradient(to top, #aa74ff 15%, rgba(0,0,0,0) 15%);
+transform: perspective(1px) translateZ(0);
+-webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+#grab.selected {
+-webkit-animation-name: grabPulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes grabPulse{
+  from { background-image: linear-gradient(to top, #aa74ff 5%, rgba(0,0,0,0) 5%); -webkit-box-shadow: inset 0 0 9px #aa74ff; }
+  50% { background-image: linear-gradient(to top, #aa74ff 5%, rgba(0,0,0,0) 5%); -webkit-box-shadow: inset 0 0 50px #aa74ff; }
+  to { background-image: linear-gradient(to top, #aa74ff 5%, rgba(0,0,0,0) 5%); -webkit-box-shadow: inset 0 0 9px #aa74ff; }
+}
+#grab:hover:before, #grab:focus:before, #grab:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+#vote .top .icon-meh {
+    background-position: -70px -280px;
+}
+#meh .bottom {
+background-image: linear-gradient(to top, #c42e3b 15%, rgba(0,0,0,0) 15%);
+}
+#meh:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #c42e3b;
+    border-radius: 0 4px 4px 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+#meh {
+background-image: linear-gradient(to top, #c42e3b 15%, rgba(0,0,0,0) 15%);
+transform: perspective(1px) translateZ(0);
+-webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+#meh.selected {
+-webkit-animation-name: mehPulse;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes mehPulse{
+  from { background-image: linear-gradient(to top, #c42e3b 5%, rgba(0,0,0,0) 5%); -webkit-box-shadow: inset 0 0 9px #c42e3b; }
+  50% { background-image: linear-gradient(to top, #c42e3b 5%, rgba(0,0,0,0) 5%); -webkit-box-shadow: inset 0 0 50px #c42e3b; }
+  to { background-image: linear-gradient(to top, #c42e3b 5%, rgba(0,0,0,0) 5%); -webkit-box-shadow: inset 0 0 9px #c42e3b; }
+}
+#meh:hover:before, #meh:focus:before, #meh:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+
+
+/*OLD VERSION
+
+#woot .bottom, #grab .bottom, #meh .bottom {background: none;}
+#vote .crowd-response .top{height: 30px;}
+#vote .bottom  {top: 30px; height: 31px;}
+#vote .crowd-response .value {top: 10px;}
+#vote .crowd-response, #vote .votes-rs {background: rgba(0, 0, 0, 0.5);}
+#woot.selected {background: #90ad2f !important;}
+#grab.selected {background: #aa74ff !important;}
+#meh.selected {background: #c42e3b !important;}
+
+#grab .bottom:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #aa74ff;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+#grab .bottom{
+background-image: linear-gradient(to top, #aa74ff 15%, rgba(0,0,0,0) 15%);
+transform: perspective(1px) translateZ(0);
+-webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+#grab .bottom:hover:before, #grab .bottom:focus:before, #grab .bottom:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+#woot .bottom:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #90ad2f;
+    border-radius: 0 0 0 4px;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+#woot .bottom{
+background-image: linear-gradient(to top, #90ad2f 15%, rgba(0,0,0,0) 15%);
+transform: perspective(1px) translateZ(0);
+-webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+#woot .bottom:hover:before, #woot .bottom:focus:before, #woot .bottom:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+#meh .bottom:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #c42e3b;
+    border-radius: 0 0 4px;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+#meh .bottom{
+background-image: linear-gradient(to top, #c42e3b 15%, rgba(0,0,0,0) 15%);
+transform: perspective(1px) translateZ(0);
+-webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+#meh .bottom:hover:before, #meh .bottom:focus:before, #meh .bottom:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+*/
+
+
+
+/*@import url("https://rawgit.com/Satskhi/OmegaV2/master/EDT/wootgrabmeh.css");*/
+@import url("https://rawgit.com/Satskhi/OmegaV2/master/EDT/dj_button.css");
+
+
+/*@import url("https://moveit-brasil.github.io/ccs/room_theme.css");
+@import url("https://rawgit.com/Satskhi/OmegaV2/master/css/transparency.css");
+
+
+[data-cid^="4405644-"] .badge-box .bdg, #user-rollover.id-13720951 .badge-box .bdg { border-radius: 5px !important; background-image: url("https://i.imgur.com/qKqUrWG.gif") !important; background-repeat: no-repeat !important; background-size: auto 30px !important; background-position: center;
+}
+[data-cid^="13720951-"] .badge-box .bdg, #user-rollover.id-13720951 .badge-box .bdg { border-radius: 5px !important; background-image: url("https://i.imgur.com/qKqUrWG.gif") !important; background-repeat: no-repeat !important; background-size: auto 30px !important; background-position: center;
+}
+@import url("https://rawgit.com/Satskhi/PlugCssSatskhi/master/css/user.css");
+
+@import url("https://rawgit.com/SatskhiPlug/SatskhiPlug/master/css.css");@import url("https://rawgit.com/Satskhi/PlugCssSatskhi/master/Satskhi.css");
+
+*/
+/*snow By: Wlff*/ 
+/*#app {
+    background-image: 
+    url('https://dl.dropboxusercontent.com/s/ds11ybkt6cfr222/Snow.png'),
+    url('https://dl.dropboxusercontent.com/s/z15ogf9cowl87z7/snow3.png'), 
+    url('https://dl.dropboxusercontent.com/s/d9c9xbf1pr1nrxi/snow2.png');
+
+    -webkit-animation: snow 15s linear infinite;
+    -moz-animation: snow 15s linear infinite;
+    -ms-animation: snow 15s linear infinite;
+    animation: snow 15s linear infinite;
+}
+@keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-moz-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-webkit-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-ms-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+
+#chat .mention.is-dj, #chat .mention.is-staff {
+    background: linear-gradient(90deg,rgba(212,23,119,0.5)0,rgba(0, 0, 0, 0.5) 50%,rgba(0, 0, 0, 0.5) 100% )!important;
+    border-left: rgb(212,23,119) 3px solid;
+}
+
+#dashboard,
+#dashboard .search,
+.communities .grid .cell,
+.communities .grid .cell .bar,
+.communities .grid .cell .favorite,
+.communities .grid .cell .meta,
+.communities .grid .cell .meta .join,
+.tab-menu button,
+.tab-menu button:hover,
+#footer, 
+#room .app-header,
+#room-settings, 
+#room-settings-menu,
+#room-settings .general-settings,
+#room .app-right, 
+#rs-skip-button, 
+#history-button, 
+#app-menu, #app-menu .list, 
+#footer-user .buttons .button:hover, 
+#app-menu .list .item:hover, 
+#app-menu .list .logout:hover, 
+#app-menu .list .rcsunload:hover, 
+#chat .cm:nth-child(2n+1), 
+#chat-input,
+#chat-header, 
+#chat-messages, 
+#user-lists .list.staff .group, 
+#user-lists .list .user:hover, 
+#waitlist .list .user, 
+#rcs-menu .search,
+#footer-user .back, 
+#footer-user .signup,
+.app-right .friends, 
+.app-right .friends .header,
+.header-panel-button.selected,
+.jspDrag,
+.jspDrag:hover, 
+.jspHorizontalBar, 
+.jspVerticalBar, 
+.jspTrack, 
+.jspTrack .jspActive, 
+.jspTrack .jspHover,
+#user-view, 
+#user-view .user-content,
+#user-menu,
+#waitlist .list .sortable-placeholder,
+#user-inventory .history .list .row,
+#user-menu .item.selected,
+#room-settings .general-settings .option .dropdown,
+#user-view .menu-points .dropdown,
+#user-settings .container .dropdown,
+.dropdown.open dd,
+.dropdown dd .row:hover,
+.user-content.profile .meta .blurb .box, 
+.user-content.profile .meta .blurb input,
+.subscribe-button,
+.user-content.profile .notifications .row,
+.experience .xp .bar,
+.experience .levels .level,
+.experience .levels .level .label,
+.user-content .grid .cell, 
+.user-content.communities .grid .cell,
+#user-inventory .history .list .row .item,
+#user-store .misc .grid .cell .title-bar,
+#user-friends .list .row,
+#user-friends .list .row .buttons button,
+#dj-button,
+#woot, 
+#grab, 
+#meh,
+#playlist-panel,
+#search-bar,
+#search,
+#filter-bar,
+#media-panel,
+#playlist-create,
+.votes-rs
+{
+background: rgba(0,0,0,0.5) !important;
+}
+.user-content .grid .cell .top
+{
+background: rgba(0,0,0,0.5);
+}
+.tab-menu button.selected,
+#user-rollover,
+#user-rollover .info,
+#user-rollover .actions .action:hover,
+#room-settings-menu .item.selected,
+#footer-user .info,
+#playlist-menu .menu .row.selected,
+#playlist-activate-button,
+.media-list .row.selected,
+.media-list .selected .actions,
+.media-list .row.now-playing .meta,
+.media-list .actions,
+#playlist-menu,
+#playlist-edit-button,
+#playlist-shuffle-button,
+#playlist-delete-button,
+#playlist-import, 
+#history-panel,
+#playlist-button
+{
+background: rgba(0,0,0,0.75) !important;
+}
+
+#chat .mention.is-dj, #chat .mention.is-staff
+{
+background:  linear-gradient(135deg,#ac76ff 0,rgba(0, 0, 0, 0.5) 13%,rgba(0, 0, 0, 0.5) 100% )!important
+}
+
+.user-content .grid .cell:hover>.top
+{
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0,rgba(0, 0, 0, 0.5) 56%,#111317 73%,rgba(0, 0, 0, 0.5) 100%);
+}
+
+#woot .bottom,
+#woot.selected
+{
+background: #90ad2f !important;
+}
+#grab .bottom,
+#grab.selected 
+{
+background: #aa74ff !important;
+}
+#meh .bottom,
+#meh.selected
+{
+background: #c42e3b !important;
+}
+#media-panel .header .button {
+    position: absolute;
+    height: 54px;
+    cursor: pointer;
+}
+#playlist-edit-button:hover, #playlist-create:hover {
+    background: -moz-linear-gradient(top,#00b5e6 0,#009cdd 100%) !important;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#00b5e6),color-stop(100%,#009cdd)) !important;
+    background: -webkit-linear-gradient(top,#00b5e6 0,#009cdd 100%) !important;
+    background: -o-linear-gradient(top,#00b5e6 0,#009cdd 100%) !important;
+    background: -ms-linear-gradient(top,#00b5e6 0,#009cdd 100%) !important;
+    background: linear-gradient(to bottom,#00b5e6 0,#009cdd 100%) !important;
+}
+#playlist-shuffle-button:hover {
+    background: -moz-linear-gradient(top,#ac76ff 0,#925aff 100%) !important;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#ac76ff),color-stop(100%,#925aff)) !important;
+    background: -webkit-linear-gradient(top,#ac76ff 0,#925aff 100%) !important;
+    background: -o-linear-gradient(top,#ac76ff 0,#925aff 100%) !important;
+    background: -ms-linear-gradient(top,#ac76ff 0,#925aff 100%) !important;
+    background: linear-gradient(to bottom,#ac76ff 0,#925aff 100%) !important;
+}
+#playlist-delete-button:hover {
+    background: -moz-linear-gradient(top,#f46b40 0,#f04f30 100%) !important;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#f46b40),color-stop(100%,#f04f30)) !important;
+    background: -webkit-linear-gradient(top,#f46b40 0,#f04f30 100%) !important;
+    background: -o-linear-gradient(top,#f46b40 0,#f04f30 100%) !important;
+    background: -ms-linear-gradient(top,#f46b40 0,#f04f30 100%) !important;
+    background: linear-gradient(to bottom,#f46b40 0,#f04f30 100%) !important;
+}
+#playlist-import:hover {
+    background: -moz-linear-gradient(top,#ac76ff 0,#925aff 100%) !important;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#ac76ff),color-stop(100%,#925aff)) !important;
+    background: -webkit-linear-gradient(top,#ac76ff 0,#925aff 100%) !important;
+    background: -o-linear-gradient(top,#ac76ff 0,#925aff 100%) !important;
+    background: -ms-linear-gradient(top,#ac76ff 0,#925aff 100%) !important;
+    background: linear-gradient(to bottom,#ac76ff 0,#925aff 100%) !important;
+}*/
