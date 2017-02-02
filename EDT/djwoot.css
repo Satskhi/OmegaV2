@@ -1,0 +1,202 @@
+#vote, #dj-button {
+opacity: 0.3;
+transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+#vote:hover, #dj-button:hover{
+opacity: 1;
+transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+#dj-button {
+    background: none;
+	transition: visibility 0s linear 0s;
+	width: 230px;
+	-webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+#dj-button:hover {
+    background: rgba(0, 0, 0, 0.5);
+	transition-delay:0s;
+	width: 230px;
+}
+#dj-button .left{
+	border-radius: 4px;
+}
+#dj-button > span {
+	position: absolute;
+	display: inline;
+	visibility:hidden;
+	opacity:0;
+	-webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+	background: none;
+	top: 10px;
+}
+
+#dj-button:hover > span {
+	position: absolute;
+	display: inline;
+	visibility:visible;
+	opacity:1;
+	transition-delay:0s;
+	top: 10px;
+}
+
+
+#woot .bottom, #grab .bottom, #meh .bottom {background: none;}
+#vote .crowd-response, #vote .votes-rs {background: rgba(0, 0, 0, 0.5);}
+
+#vote .top .icon-woot {
+    background-position: -105px -280px;
+}
+#woot .bottom {
+background-image: linear-gradient(to top, #90ad2f 15%, rgba(0,0,0,0) 15%);
+}
+#woot:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #90ad2f;
+    border-radius: 4px 0 0 4px;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+#woot {
+background-image: linear-gradient(to top, #90ad2f 15%, rgba(0,0,0,0) 15%);
+transform: perspective(1px) translateZ(0);
+-webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+#woot.selected {
+-webkit-animation-name: wootPulse;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes wootPulse {
+  from {background-image: linear-gradient(to top, #90ad2f 5%, rgba(0,0,0,0) 5%); -webkit-box-shadow: inset 0 0 9px #90ad2f; }
+  50% { background-image: linear-gradient(to top, #90ad2f 5%, rgba(0,0,0,0) 5%); -webkit-box-shadow: inset 0 0 50px #90ad2f; }
+  to { background-image: linear-gradient(to top, #90ad2f 5%, rgba(0,0,0,0) 5%); -webkit-box-shadow: inset 0 0 9px #90ad2f; }
+}
+#woot:hover:before, #woot:focus:before, #woot:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+#vote .top .icon-grab {
+   background-position: -35px -280px;
+}
+#grab .bottom {
+background-image: linear-gradient(to top, #aa74ff 15%, rgba(0,0,0,0) 15%);
+}
+#grab:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #aa74ff;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+#grab {
+background-image: linear-gradient(to top, #aa74ff 15%, rgba(0,0,0,0) 15%);
+transform: perspective(1px) translateZ(0);
+-webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+#grab.selected {
+-webkit-animation-name: grabPulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes grabPulse{
+  from { background-image: linear-gradient(to top, #aa74ff 5%, rgba(0,0,0,0) 5%); -webkit-box-shadow: inset 0 0 9px #aa74ff; }
+  50% { background-image: linear-gradient(to top, #aa74ff 5%, rgba(0,0,0,0) 5%); -webkit-box-shadow: inset 0 0 50px #aa74ff; }
+  to { background-image: linear-gradient(to top, #aa74ff 5%, rgba(0,0,0,0) 5%); -webkit-box-shadow: inset 0 0 9px #aa74ff; }
+}
+#grab:hover:before, #grab:focus:before, #grab:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+#vote .top .icon-meh {
+    background-position: -70px -280px;
+}
+#meh .bottom {
+background-image: linear-gradient(to top, #c42e3b 15%, rgba(0,0,0,0) 15%);
+}
+#meh:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #c42e3b;
+    border-radius: 0 4px 4px 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+#meh {
+background-image: linear-gradient(to top, #c42e3b 15%, rgba(0,0,0,0) 15%);
+transform: perspective(1px) translateZ(0);
+-webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+#meh.selected {
+-webkit-animation-name: mehPulse;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes mehPulse{
+  from { background-image: linear-gradient(to top, #c42e3b 5%, rgba(0,0,0,0) 5%); -webkit-box-shadow: inset 0 0 9px #c42e3b; }
+  50% { background-image: linear-gradient(to top, #c42e3b 5%, rgba(0,0,0,0) 5%); -webkit-box-shadow: inset 0 0 50px #c42e3b; }
+  to { background-image: linear-gradient(to top, #c42e3b 5%, rgba(0,0,0,0) 5%); -webkit-box-shadow: inset 0 0 9px #c42e3b; }
+}
+#meh:hover:before, #meh:focus:before, #meh:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
