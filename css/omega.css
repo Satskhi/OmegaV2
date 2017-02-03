@@ -25,11 +25,11 @@ button.accordion {
 button.accordion.active, button.accordion:hover {    
     background-color: rgba(212, 23, 119, 0.5);
 }
-div.panel {    
+.jspPane .panel {    
     padding: 0 18px;   
     display: none;
 }
-div.panel.show {   
+.jspPane .panel.show {   
   display: block;
 }
 .omega-menu-header.list-header{
