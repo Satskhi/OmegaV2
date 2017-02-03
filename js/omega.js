@@ -26,7 +26,7 @@ $('head').append('<link href="https://rawgit.com/Satskhi/OmegaV2/master/css/omeg
 var Omega = (function () {
     var models = {
         'tab': `<div id="omega-menu-button" class="header-panel-button omega-tab">
-                    <span class="icon-info omega-menu-button-info"><i class="icon" style="width: 26px;height: 27px;background: url(https://i.imgur.com/iYdzGOJ.gif);"></i></span>
+                    <span class="icon-info omega-menu-button-info"><i class="icon" style="width: 27px;height: 27px;background: url(https://i.imgur.com/iYdzGOJ.gif); background-size: 27px 27px;"></i></span>
                 </div>`,
         menu: `<div id="omega-menu" style="display:none">
                 <div class="omega-menu-header list-header"><span class="title">Omega Settings</span></div>
