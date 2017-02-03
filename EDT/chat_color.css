@@ -1,5 +1,5 @@
 
-.is-dj .name, .is-staff .name, #chat .from.dj .un, #chat .from.staff .un {
+.is-dj .name, .is-staff .name, #chat .from.dj .un, #chat .from.staff .un, #chat .text a, #chat .text a:visited {
 color: #418377;
 }
 
