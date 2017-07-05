@@ -638,8 +638,17 @@ function badgeMod(bm){
 	} else if (bm==213) {
 		$('#badgeOmegaMod').remove()
 		$("<style id='badgeOmegaMod' type='text/css'> [data-cid^='"+(user)+"-'] .badge-box .bdg, #user-rollover.id-"+(user)+" .badge-box .bdg { border-radius: 5px !important; background-image: url('https://rawgit.com/Satskhi/OmegaV2/master/badge/(212).gif') !important; background-repeat: no-repeat !important; background-size: 30px !important; background-position: center;} </style>").appendTo("head");
-	} else {
+	} else if (bm==214) {
 		$('#badgeOmegaMod').remove()
 		$("<style id='badgeOmegaMod' type='text/css'> [data-cid^='"+(user)+"-'] .badge-box .bdg, #user-rollover.id-"+(user)+" .badge-box .bdg { border-radius: 5px !important; background-image: url('https://rawgit.com/Satskhi/OmegaV2/master/badge/(213).gif') !important; background-repeat: no-repeat !important; background-size: 30px !important; background-position: center;} </style>").appendTo("head");
+	} else if (bm==215) {
+		$('#badgeOmegaMod').remove()
+		$("<style id='badgeOmegaMod' type='text/css'> [data-cid^='"+(user)+"-'] .badge-box .bdg, #user-rollover.id-"+(user)+" .badge-box .bdg { border-radius: 5px !important; background-image: url('https://i.imgur.com/eh2VJbv.gif') !important; background-repeat: no-repeat !important; background-size: 30px !important; background-position: center;} </style>").appendTo("head");
+	} else if (bm==216) {
+		$('#badgeOmegaMod').remove()
+		$("<style id='badgeOmegaMod' type='text/css'> [data-cid^='"+(user)+"-'] .badge-box .bdg, #user-rollover.id-"+(user)+" .badge-box .bdg { border-radius: 5px !important; background-image: url('https://i.imgur.com/WSnlRjs.gif') !important; background-repeat: no-repeat !important; background-size: 30px !important; background-position: center;} </style>").appendTo("head");
+	} else {
+		$('#badgeOmegaMod').remove()
+		$("<style id='badgeOmegaMod' type='text/css'> [data-cid^='"+(user)+"-'] .badge-box .bdg, #user-rollover.id-"+(user)+" .badge-box .bdg { border-radius: 5px !important; background-image: url('https://i.imgur.com/lLqiUUB.gif') !important; background-repeat: no-repeat !important; background-size: 30px !important; background-position: center;} </style>").appendTo("head");
 	}
 };
