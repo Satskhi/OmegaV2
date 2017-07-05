@@ -925,6 +925,18 @@ var Omega = (function () {
     <input type="radio" name="badgeOmegaMod" onchange="badgeMod(214)">
     <img src="https://rawgit.com/Satskhi/OmegaV2/master/badge/(213).gif" width="19px">
 </label>
+<label>
+    <input type="radio" name="badgeOmegaMod" onchange="badgeMod(215)">
+    <img src="https://i.imgur.com/eh2VJbv.gif" width="19px">
+</label>
+<label>
+    <input type="radio" name="badgeOmegaMod" onchange="badgeMod(216)">
+    <img src="https://i.imgur.com/WSnlRjs.gif" width="19px">
+</label>
+<label>
+    <input type="radio" name="badgeOmegaMod" onchange="badgeMod(217)">
+    <img src="https://i.imgur.com/lLqiUUB.gif" width="19px">
+</label>
 								</div>						
 						<!-- -->
                         </div>
